@@ -1,1 +1,1 @@
-export {TransactionEvent} from "./TransactionEvent";
+export {TransactionEventInput} from "./TransactionEventInput";
