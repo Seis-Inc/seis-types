@@ -12,10 +12,10 @@ export type CreditCardPayment = {
     minimumPaymentAmountCents: number;
     periodBalanceCents: number;
     status: CreditCardPaymentStatus;
-    dueDate: Date;
-    periodDate: Date;
-    createdAt: Date;
-    updatedAt: Date;
+    dueDate: string;
+    periodDate: string;
+    createdAt: string;
+    updatedAt: string;
 };
 
 export type CreateCreditCardPaymentInput = {
@@ -23,8 +23,8 @@ export type CreateCreditCardPaymentInput = {
     minimumPaymentAmountCents: number;
     periodBalanceCents: number;
     status: CreditCardPaymentStatus;
-    dueDate: Date;
-    periodDate: Date;
+    dueDate: string;
+    periodDate: string;
 };
 
 export type GetCreditCardPaymentInput = {
