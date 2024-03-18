@@ -1,3 +1,5 @@
+import { ListOptions } from "../common/common";
+
 export enum CreditCardPaymentStatus{
     Pending = 'Pending',
     Paid = 'Paid',
@@ -31,4 +33,4 @@ export type GetCreditCardPaymentInput = {
 
 export type FindCreditCardPaymentInput = {
     creditCardAccountId?: string;
-}
+} & ListOptions;
