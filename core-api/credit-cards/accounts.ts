@@ -10,8 +10,10 @@ export type CreditCardAccount = {
     id: string;
     userId: string;
     status: CreditCardAccountStatus;
-    creditLimitCents: number
-    interestRate: number
+    creditLimitCents: number;
+    interestRate: number;
+    balanceCents: number;
+    name: string;
     idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;
@@ -21,6 +23,8 @@ export type CreateCreditCardAccountInput = {
   userId: string;
   creditLimitCents: number;
   interestRate: number;
+  name: string;
+  balanceCents: number;
 };
 
 export type FindCreditCardAccountInput = {
