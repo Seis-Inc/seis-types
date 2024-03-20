@@ -1,4 +1,4 @@
-import { ListOptions } from "../";
+import {ListOptions} from "../common/common";
 
 export enum CreditCardAccountStatus {
     Open = 'Open',
