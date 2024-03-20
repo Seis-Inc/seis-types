@@ -22,10 +22,10 @@ export type CreditCardAccount = {
     interestRate: number;
     balanceCents: number;
     name: string;
-    scheduledPaymentAmountType?: CreditCardAccountScheduledPaymentAmountType;
-    scheduledPaymentDefinition?: string;
-    scheduledPaymentAmountCents?: number;
-    idempotencyKey?: string;
+    scheduledPaymentAmountType: CreditCardAccountScheduledPaymentAmountType | null;
+    scheduledPaymentDefinition: string | null;
+    scheduledPaymentAmountCents: number | null;
+    idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;
 };
