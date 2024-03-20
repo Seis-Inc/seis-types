@@ -28,7 +28,7 @@ export type CreditCardAccount = {
     balanceCents: number;
     name: string;
     scheduledPaymentAmountType: CreditCardAccountScheduledPaymentAmountType | null;
-    scheudledPaymentType: CreditCardAccountScheduledPaymentType | null;
+    scheduledPaymentType: CreditCardAccountScheduledPaymentType | null;
     scheduledPaymentDefinition: string | null;
     scheduledPaymentAmountCents: number | null;
     idempotencyKey: string | null;
