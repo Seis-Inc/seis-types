@@ -1,5 +1,10 @@
-import {ListOptions} from "../common/common";
-
+export type ListOptions = {
+  offset?: number;
+  limit?: number;
+  noRows?: boolean;
+  noTotal?: boolean;
+  noLimit?: boolean;
+}
 export enum CreditCardAccountStatus {
     Open = 'Open',
     Closed = 'Closed',

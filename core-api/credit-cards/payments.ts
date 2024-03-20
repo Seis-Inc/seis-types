@@ -1,4 +1,11 @@
-import { ListOptions } from "../common/common";
+
+export type ListOptions = {
+    offset?: number;
+    limit?: number;
+    noRows?: boolean;
+    noTotal?: boolean;
+    noLimit?: boolean;
+}
 
 export enum CreditCardPaymentStatus{
     Pending = 'Pending',
