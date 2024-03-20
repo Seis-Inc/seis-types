@@ -1,1 +1,1 @@
-{"version":3,"file":"TransactionEventInput.js","sourceRoot":"","sources":["TransactionEventInput.ts"],"names":[],"mappings":""}
+{"version":3,"file":"TransactionEventInput.js","sourceRoot":"","sources":["../../src/ledger-service/TransactionEventInput.ts"],"names":[],"mappings":""}

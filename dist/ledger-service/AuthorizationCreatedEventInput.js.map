@@ -1,1 +1,1 @@
-{"version":3,"file":"AuthorizationCreatedEventInput.js","sourceRoot":"","sources":["AuthorizationCreatedEventInput.ts"],"names":[],"mappings":""}
+{"version":3,"file":"AuthorizationCreatedEventInput.js","sourceRoot":"","sources":["../../src/ledger-service/AuthorizationCreatedEventInput.ts"],"names":[],"mappings":""}
