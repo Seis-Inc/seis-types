@@ -11,7 +11,7 @@ export interface NetworkPayment {
   effectiveStatus: string;
   unitPaymentId: string | null;
   tabapayTransactionId: string;
-  tabapayIdempotencyKey: number;
+  tabapayIdempotencyKey: string;
   accountId?: string;
   tabapayApprovalCode?: string;
   tabapayAccountId?: string;
