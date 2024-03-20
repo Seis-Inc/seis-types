@@ -14,6 +14,11 @@ export enum CreditCardAccountScheduledPaymentAmountType {
 	CustomPayment = 'CustomPayment'
 };
 
+export enum CreditCardAccountScheduledPaymentType {
+  ScheduledOnDueDate = 'ScheduledOnDueDate',
+  ScheduledOnStatementDate = 'ScheduledOnStatementDate'
+};
+
 export type CreditCardAccount = {
     id: string;
     userId: string;
@@ -23,6 +28,7 @@ export type CreditCardAccount = {
     balanceCents: number;
     name: string;
     scheduledPaymentAmountType: CreditCardAccountScheduledPaymentAmountType | null;
+    scheudledPaymentType: CreditCardAccountScheduledPaymentType | null;
     scheduledPaymentDefinition: string | null;
     scheduledPaymentAmountCents: number | null;
     idempotencyKey: string | null;
