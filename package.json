@@ -1,11 +1,11 @@
 {
   "name": "seis-types",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "index.js",
   "author": "Seis Inc",
   "license": "ISC",
   "scripts": {
-    "createVersion": "git tag 1.0.11",
+    "createVersion": "git tag 1.0.12",
     "publishVersion": "git push --tags"
   }
 }
