@@ -75,5 +75,4 @@ export type PatchCreditCardAccountInput = Partial<Omit<CreditCardAccount, 'id' |
 export type FindCreditCardAccountInput = {
   id?: string;
   userId?: string;
-  scheduledPaymentAt?: string;
 } & ListOptions;
