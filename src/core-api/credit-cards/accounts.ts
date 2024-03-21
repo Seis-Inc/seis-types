@@ -65,7 +65,7 @@ export type CreditCardAccountAutopayConfiguration = {
 	updatedAt: Date;
 }
 
-export type CreateCreditCardAccountAutopayConfigurationInput = Omit<CreditCardAccountAutopayConfiguration, 'id' | 'createdAt' | 'updatedAt'>;
+export type CreateCreditCardAccountAutopayConfigurationInput = Omit<CreditCardAccountAutopayConfiguration, 'id' | 'creditCardAccountId' |  'createdAt' | 'updatedAt'>;
 export type PatchCreditCardAccountAutopayConfigurationInput = Partial<Omit<CreditCardAccountAutopayConfiguration, 'id' | 'creditCardAccountId' |'createdAt' | 'updatedAt'>>;
 
 export type CreateCreditCardAccountInput = Omit<CreditCardAccount, 'id' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration'>;
