@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = void 0;
+exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = void 0;
 var CreditCardAccountStatus;
 (function (CreditCardAccountStatus) {
     CreditCardAccountStatus["Open"] = "Open";
@@ -23,4 +23,27 @@ var CreditCardAccountScheduledPaymentType;
     CreditCardAccountScheduledPaymentType["ScheduledOnStatementDate"] = "ScheduledOnStatementDate";
 })(CreditCardAccountScheduledPaymentType || (exports.CreditCardAccountScheduledPaymentType = CreditCardAccountScheduledPaymentType = {}));
 ;
+var CreditCardAccountAutopayConfigurationStatus;
+(function (CreditCardAccountAutopayConfigurationStatus) {
+    CreditCardAccountAutopayConfigurationStatus["Active"] = "Active";
+    CreditCardAccountAutopayConfigurationStatus["Paused"] = "Paused";
+    CreditCardAccountAutopayConfigurationStatus["Cancelled"] = "Cancelled";
+    CreditCardAccountAutopayConfigurationStatus["Failed"] = "Failed";
+})(CreditCardAccountAutopayConfigurationStatus || (exports.CreditCardAccountAutopayConfigurationStatus = CreditCardAccountAutopayConfigurationStatus = {}));
+;
+var CreditCardAccountAutopayPayoffAmountType;
+(function (CreditCardAccountAutopayPayoffAmountType) {
+    CreditCardAccountAutopayPayoffAmountType["MinimumPayment"] = "MinimumPayment";
+    CreditCardAccountAutopayPayoffAmountType["FullStatementBalance"] = "FullStatementBalance";
+    CreditCardAccountAutopayPayoffAmountType["MinimumPaymentPlus"] = "MinimumPaymentPlus";
+    CreditCardAccountAutopayPayoffAmountType["FullAccountBalance"] = "FullAccountBalance";
+    CreditCardAccountAutopayPayoffAmountType["CustomPayment"] = "CustomPayment";
+})(CreditCardAccountAutopayPayoffAmountType || (exports.CreditCardAccountAutopayPayoffAmountType = CreditCardAccountAutopayPayoffAmountType = {}));
+;
+var CreditCardAccountAutopayInterval;
+(function (CreditCardAccountAutopayInterval) {
+    CreditCardAccountAutopayInterval["Monthly"] = "Monthly";
+    CreditCardAccountAutopayInterval["Weekly"] = "Weekly";
+    CreditCardAccountAutopayInterval["Daily"] = "Daily";
+})(CreditCardAccountAutopayInterval || (exports.CreditCardAccountAutopayInterval = CreditCardAccountAutopayInterval = {}));
 //# sourceMappingURL=accounts.js.map
