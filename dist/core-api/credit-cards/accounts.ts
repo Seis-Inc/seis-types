@@ -27,10 +27,6 @@ export type CreditCardAccount = {
     interestRate: number;
     balanceCents: number;
     name: string;
-    scheduledPaymentAmountType: CreditCardAccountScheduledPaymentAmountType | null;
-    scheduledPaymentType: CreditCardAccountScheduledPaymentType | null;
-    scheduledPaymentDefinition: string | null;
-    scheduledPaymentAmountCents: number | null;
     autopayConfiguration: CreditCardAccountAutopayConfiguration | null;
     idempotencyKey: string | null;
     createdAt: string;
