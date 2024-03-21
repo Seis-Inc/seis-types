@@ -1,3 +1,12 @@
+export enum CreditCardApplicationStatus {
+  ConfirmNameAndAddress,
+  ConfirmIncomAndExpenses,
+  ConfirmApplicationConsent,
+  AcceptDisclosures,
+  ApplicationApproved,
+  ApplicationDenied,
+}
+
 export interface CreditCardApplication {
   id: string;
   incomeAndExpensesConfirmedAt: string | null;
