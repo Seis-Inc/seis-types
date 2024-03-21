@@ -65,15 +65,12 @@ export type CreditCardAccountAutopayConfiguration = {
 	updatedAt: Date;
 }
 
-export type CreateCreditCardAccountInput = {
-  userId: string;
-  creditLimitCents: number;
-  interestRate: number;
-  name: string;
-  balanceCents: number;
-};
+export type CreateCreditCardAccountAutopayConfigurationInput = Omit<CreditCardAccountAutopayConfiguration, 'id' | 'createdAt' | 'updatedAt'>;
+export type PatchCreditCardAccountAutopayConfigurationInput = Partial<Omit<CreditCardAccountAutopayConfiguration, 'id' | 'creditCardAccountId' |'createdAt' | 'updatedAt'>>;
 
-export type PatchCreditCardAccountInput = Partial<Omit<CreditCardAccount, 'id' | 'userId' | 'createdAt' | 'updatedAt' | 'idempotencyKey'>>;
+export type CreateCreditCardAccountInput = Omit<CreditCardAccount, 'id' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration'>;
+
+export type PatchCreditCardAccountInput = Partial<Omit<CreditCardAccount, 'id' | 'userId' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration'>>;
 
 export type FindCreditCardAccountInput = {
   id?: string;
