@@ -76,3 +76,8 @@ export type FindCreditCardAccountInput = {
   id?: string;
   userId?: string;
 } & ListOptions;
+
+export type FilterCreditCardAccountAutopayConfiguration = {
+  id?: string;
+  creditCardAccountId?: string;
+} & ListOptions;
