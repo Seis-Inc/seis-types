@@ -31,10 +31,43 @@ export type CreditCardAccount = {
     scheduledPaymentType: CreditCardAccountScheduledPaymentType | null;
     scheduledPaymentDefinition: string | null;
     scheduledPaymentAmountCents: number | null;
+    autopayConfiguration: CreditCardAccountAutopayConfiguration | null;
     idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;
 };
+
+export enum CreditCardAccountAutopayConfigurationStatus {
+	Active = 'Active',
+	Paused = 'Paused',
+	Cancelled = 'Cancelled',
+	Failed = 'Failed'
+};
+
+export enum CreditCardAccountAutopayPayoffAmountType {
+	MinimumPayment = 'MinimumPayment',
+	FullStatementBalance = 'FullStatementBalance',
+	MinimumPaymentPlus = 'MinimumPaymentPlus',
+	FullAccountBalance = 'FullAccountBalance',
+	CustomPayment = 'CustomPayment'
+};
+
+export enum CreditCardAccountAutopayInterval {
+	Monthly = 'Monthly',
+	Weekly = 'Weekly',
+	Daily = 'Daily'
+}
+
+export type CreditCardAccountAutopayConfiguration = {
+  id: string;
+	creditCardAccountId: string;
+	status: CreditCardAccountAutopayConfigurationStatus;
+	payoffAmountType: CreditCardAccountAutopayPayoffAmountType;
+	autopayInterval: CreditCardAccountAutopayInterval;
+	autopayCronDefinition: string | null;
+	createdAt: Date;
+	updatedAt: Date;
+}
 
 export type CreateCreditCardAccountInput = {
   userId: string;

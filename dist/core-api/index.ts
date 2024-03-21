@@ -1,6 +1,7 @@
 export {NetworkPayment} from "./networkPayments/NetworkPayment";
 export {NetworkPaymentStatus} from "./networkPayments/NetworkPaymentStatus";
 export {NetworkUserOptions} from "./networkPayments/NetworkUserOptions";
-export {CreditCardAccount, CreditCardAccountStatus, CreateCreditCardAccountInput, FindCreditCardAccountInput, CreditCardAccountScheduledPaymentAmountType, PatchCreditCardAccountInput, CreditCardAccountScheduledPaymentType} from './credit-cards/accounts';
+export {CreditCardAccount, CreditCardAccountStatus, CreateCreditCardAccountInput, FindCreditCardAccountInput, CreditCardAccountScheduledPaymentAmountType, PatchCreditCardAccountInput, CreditCardAccountScheduledPaymentType, CreditCardAccountAutopayConfiguration, CreditCardAccountAutopayConfigurationStatus, CreditCardAccountAutopayInterval, CreditCardAccountAutopayPayoffAmountType} from './credit-cards/accounts';
 export {CreditCardPayment, CreditCardPaymentStatus, CreateCreditCardPaymentInput, GetCreditCardPaymentInput, FindCreditCardPaymentInput} from './credit-cards/payments';
 export {CreditCardAccountPeriodStatus, CreditCardAccountScheduledPeriod, CreditCardAccountStatementPeriod, CreateCreditCardAccountScheduledPeriodInput, CreateCreditCardAccountStatementPeriodInput, PatchCreditCardAccountScheduledPeriodInput, PatchCreditCardAccountStatementPeriodInput, FilterCreditCardAccountScheduledPeriodsInput, FilterCreditCardAccountStatementPeriodsInput} from './credit-cards/periods';
+
