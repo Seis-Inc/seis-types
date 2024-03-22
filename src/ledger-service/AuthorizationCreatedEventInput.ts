@@ -4,4 +4,5 @@ export type AuthorizationCreatedEventInput = {
   merchantMcc: string;
   merchantName: string;
   network: string;
+  externalId: string;
 }
