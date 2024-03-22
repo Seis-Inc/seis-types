@@ -1,4 +1,4 @@
-export type AuthorizationCreatedEventInput = {
+export type AuthorizationCreated = {
   amountCents: number;
   accountId: string;
   merchantMcc: string;

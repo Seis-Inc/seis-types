@@ -1,2 +1,2 @@
 export {TransactionEventInput} from "./TransactionEventInput";
-export {AuthorizationCreatedEventInput} from "./AuthorizationCreatedEventInput";
+export {AuthorizationCreated} from "./AuthorizationCreated";
