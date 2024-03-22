@@ -24,6 +24,7 @@ export type CreditCardAccountStatementPeriod = {
     creditCardAccountId: string;
     startAt: string;
     endAt: string;
+    dueAt: string;
     status: CreditCardAccountPeriodStatus;
     statementBalanceCents: number;
     interestDueCents: number;
