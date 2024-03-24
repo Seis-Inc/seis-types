@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreditCardPaymentStatus = void 0;
+exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = void 0;
 var CreditCardPaymentStatus;
 (function (CreditCardPaymentStatus) {
     CreditCardPaymentStatus["Pending"] = "Pending";
@@ -8,4 +8,10 @@ var CreditCardPaymentStatus;
     CreditCardPaymentStatus["Overdue"] = "Overdue";
 })(CreditCardPaymentStatus || (exports.CreditCardPaymentStatus = CreditCardPaymentStatus = {}));
 ;
+var CreditCardAccountAutopayPaymentStatus;
+(function (CreditCardAccountAutopayPaymentStatus) {
+    CreditCardAccountAutopayPaymentStatus["Paid"] = "Paid";
+    CreditCardAccountAutopayPaymentStatus["Failed"] = "Failed";
+    CreditCardAccountAutopayPaymentStatus["Cancelled"] = "Cancelled";
+})(CreditCardAccountAutopayPaymentStatus || (exports.CreditCardAccountAutopayPaymentStatus = CreditCardAccountAutopayPaymentStatus = {}));
 //# sourceMappingURL=payments.js.map

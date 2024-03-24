@@ -6,6 +6,23 @@ export enum CreditCardPaymentStatus{
     Overdue = 'Overdue'
 };
 
+export enum CreditCardAccountAutopayPaymentStatus {
+    Paid = 'Paid',
+    Failed = 'Failed',
+    Cancelled = 'Cancelled'
+}
+
+export type CreditCardAccountAutopayPayment = {
+    id: string;
+    creditCardAccountId: string;
+    status: CreditCardAccountAutopayPaymentStatus;
+    createdAt: string;
+    updatedAt: string;
+};
+
+export type CreateCreditCardAccountAutopayPaymentInput = Omit<CreditCardAccountAutopayPayment, 'id' | 'createdAt' | 'updatedAt'>;
+export type FindCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAccountAutopayPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
+
 export type CreditCardPayment = {
     id: string;
     creditCardAccountId: string;
