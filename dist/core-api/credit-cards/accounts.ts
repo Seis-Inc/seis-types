@@ -75,6 +75,8 @@ export type PatchCreditCardAccountInput = Partial<Omit<CreditCardAccount, 'id' |
 export type FindCreditCardAccountInput = {
   id?: string;
   userId?: string;
+  autopayAt?: string;
+  balanceCentsGreaterThan?: number;
 } & ListOptions;
 
 export type FilterCreditCardAccountAutopayConfiguration = {
