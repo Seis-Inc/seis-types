@@ -11,8 +11,6 @@ export interface CreditCardApplication {
   userId: string;
   idempotencyKey: string;
 
-  nameAndAddressConfirmedAt: Optional<string>;
-
   monthlyIncomeCents: Optional<number>;
   monthlyExpensesCents: Optional<number>;
   incomeAndExpensesConfirmedAt: Optional<string>;
