@@ -23,6 +23,7 @@ export {
   CreditCardAccountAutopayPaymentStatus,
   CreditCardAccountAutopayPayment,
   CreateCreditCardAccountAutopayPaymentInput,
+  PatchCreditCardAccountAutopayPaymentInput,
   FindCreditCardAccountAutopayPaymentInput,
   CreditCardAccountPayment,
   CreateCreditCardAccountPaymentInput,
