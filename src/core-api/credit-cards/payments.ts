@@ -21,6 +21,7 @@ export type CreditCardAccountAutopayPayment = {
 };
 
 export type CreateCreditCardAccountAutopayPaymentInput = Omit<CreditCardAccountAutopayPayment, 'id' | 'createdAt' | 'updatedAt'>;
+export type PatchCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAccountAutopayPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
 export type FindCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAccountAutopayPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
 
 export type CreditCardAccountPayment = {
