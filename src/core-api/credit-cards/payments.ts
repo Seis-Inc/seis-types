@@ -23,28 +23,21 @@ export type CreditCardAccountAutopayPayment = {
 export type CreateCreditCardAccountAutopayPaymentInput = Omit<CreditCardAccountAutopayPayment, 'id' | 'createdAt' | 'updatedAt'>;
 export type FindCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAccountAutopayPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
 
-export type CreditCardPayment = {
+export type CreditCardAccountPayment = {
     id: string;
     creditCardAccountId: string;
-    minimumPaymentAmountCents: number;
-    periodBalanceCents: number;
     status: CreditCardPaymentStatus;
-    dueAt: string;
-    periodEndsAt: string;
+    amountCents: number;
+    bookPaymentId: string | null;
+    paidAt: string | null;
     createdAt: string;
     updatedAt: string;
 };
 
-export type CreateCreditCardPaymentInput = {
-    creditCardAccountId: string;
-    minimumPaymentAmountCents: number;
-    periodBalanceCents: number;
-    status: CreditCardPaymentStatus;
-    dueAt: string;
-    periodEndsAt: string;
-};
-
-export type GetCreditCardPaymentInput = {
+export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
+export type PatchCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
+export type FindCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
+export type GetCreditCardAccountPaymentInput = {
     creditCardAccountId: string;
 };
 

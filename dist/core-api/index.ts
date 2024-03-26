@@ -19,11 +19,16 @@ export {
   FilterCreditCardAccountAutopayConfiguration,
 } from "./credit-cards/accounts";
 export {
-  CreditCardPayment,
   CreditCardPaymentStatus,
-  CreateCreditCardPaymentInput,
-  GetCreditCardPaymentInput,
-  FindCreditCardPaymentInput,
+  CreditCardAccountAutopayPaymentStatus,
+  CreditCardAccountAutopayPayment,
+  CreateCreditCardAccountAutopayPaymentInput,
+  FindCreditCardAccountAutopayPaymentInput,
+  CreditCardAccountPayment,
+  CreateCreditCardAccountPaymentInput,
+  PatchCreditCardAccountPaymentInput,
+  GetCreditCardAccountPaymentInput,
+  FindCreditCardAccountPaymentInput,
 } from "./credit-cards/payments";
 export {
   CreditCardAccountPeriodStatus,
