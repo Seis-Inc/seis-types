@@ -1,6 +1,6 @@
 type TransactionType = 'Payment' | 'Interest' | 'CardTransaction'
 
-export type TransactionEventInput = {
+export type TransactionCreated = {
   fromAccountId: string,
   toAccountId: string,
   amountCents: number,
