@@ -23,7 +23,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.coreApi = exports.ledgerService = void 0;
+exports.general = exports.coreApi = exports.ledgerService = void 0;
 exports.ledgerService = __importStar(require("./ledger-service"));
 exports.coreApi = __importStar(require("./core-api"));
+exports.general = __importStar(require("./general"));
 //# sourceMappingURL=index.js.map
