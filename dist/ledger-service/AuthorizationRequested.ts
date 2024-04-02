@@ -1,6 +1,6 @@
 export type AuthorizationRequested = {
   amountCents: number;
-  accountId: string;
+  externalAccountId: string;
   merchantId: string;
   merchantMcc: string;
   merchantName: string;
