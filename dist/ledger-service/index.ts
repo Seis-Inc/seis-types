@@ -4,3 +4,4 @@ export {AuthorizationRequested} from "./AuthorizationRequested";
 export {AuthorizationEvent} from "./AuthorizationEvent";
 export {AuthorizationEventType} from "./AuthorizationEventType";
 export {AccountCreated} from "./AccountCreated";
+export {AuthorizationCancelationRequested} from "./AuthorizationCancelationRequested";
