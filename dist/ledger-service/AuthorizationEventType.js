@@ -6,6 +6,7 @@ var AuthorizationEventType;
     //NounPastTenseVerb = 'NounPastTenseVerb'
     AuthorizationEventType["AuthorizationDeclined"] = "AuthorizationDeclined";
     AuthorizationEventType["AuthorizationApproved"] = "AuthorizationApproved";
+    AuthorizationEventType["AuthorizationCanceled"] = "AuthorizationCanceled";
     //AuthorizationAmountChanged = 'AuthorizationAmountChanged'
 })(AuthorizationEventType || (exports.AuthorizationEventType = AuthorizationEventType = {}));
 //# sourceMappingURL=AuthorizationEventType.js.map
