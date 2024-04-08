@@ -46,3 +46,9 @@ export {
   CreditCardApplicationFilter,
   CreditCardApplication,
 } from "./credit-cards/applications";
+
+export {CreditCard} from './credit-cards/CreditCard'
+export {CreditCardInput} from './credit-cards/CreditCardInput'
+export {CreditCardPatch} from './credit-cards/CreditCardPatch'
+export {CreditCardFilter} from './credit-cards/CreditCardFilter'
+export {CreditCardPage} from './credit-cards/CreditCardPage'
