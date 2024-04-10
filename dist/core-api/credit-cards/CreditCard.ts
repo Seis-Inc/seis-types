@@ -7,7 +7,7 @@ export type CreditCard = {
   expirationDate: string;
   last4Digits: string;
   bin: string;
-  shippingMethod: string;
+  shippingMethod: string | null;
   token: string;
   digitalCardArtToken: string | null;
   createdAt: string;
