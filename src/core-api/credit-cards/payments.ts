@@ -1,6 +1,7 @@
 import {ListOptions} from "../common/ListOptions";
 
 export enum CreditCardPaymentStatus{
+    Failed = 'Failed',
     Pending = 'Pending',
     Paid = 'Paid',
     Overdue = 'Overdue'

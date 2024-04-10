@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = void 0;
 var CreditCardPaymentStatus;
 (function (CreditCardPaymentStatus) {
+    CreditCardPaymentStatus["Failed"] = "Failed";
     CreditCardPaymentStatus["Pending"] = "Pending";
     CreditCardPaymentStatus["Paid"] = "Paid";
     CreditCardPaymentStatus["Overdue"] = "Overdue";
