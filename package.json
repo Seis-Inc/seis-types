@@ -11,7 +11,8 @@
   "scripts": {
     "postinstall": "rm -rf ../../node_modules/seis-types/src/",
     "build": "./node_modules/typescript/bin/tsc && cp -R src/ledger-service dist/ && cp -R src/core-api dist/",
-    "createVersion": "git tag 1.0.70 && git push --tags",
+    "logVersion": "$(node -e \"(function () { console.log(require('./package.json').version) })()\")",
+    "createVersion": "git tag $(yarn logVersion) && git push --tags",
     "publish": "wrap() { yarn build && git commit -am \"creating new version\" && git push origin master && git tag $@ && git push origin $@; }; wrap"
   },
   "devDependencies": {

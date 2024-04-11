@@ -10,6 +10,10 @@ export type CreditCard = {
   shippingMethod: string | null;
   token: string;
   digitalCardArtToken: string | null;
+  creditCardAccountId: string;
+  activatedAt: string | null;
+  canceledAt: string | null;
+  cancelationReason: string | null;
   createdAt: string;
   updatedAt: string;
 };

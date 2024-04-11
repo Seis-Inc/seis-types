@@ -7,8 +7,12 @@ export type CreditCardInput = {
   expirationDate: string;
   last4Digits: string;
   bin: string;
-  shippingMethod: string | null;
+  shippingMethod?: string | null;
   token: string;
-  digitalCardArtToken: string | null;
+  digitalCardArtToken?: string | null;
+  creditCardAccountId: string;
+  activatedAt?: string | null;
+  canceledAt?: string | null;
+  cancelationReason?: string | null;
 };
 
