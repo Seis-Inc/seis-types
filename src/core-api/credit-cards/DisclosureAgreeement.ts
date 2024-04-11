@@ -6,7 +6,7 @@ export type CreditCardDisclosureDocument = {
   userId: string;
   disclosureName: string;
   // @ts-ignore
-  htmlContent: Buffer;
+  s3DocumentKey: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -15,7 +15,7 @@ export type CreditCardDisclosureDocumentInput = {
   userId: string;
   disclosureName: string;
   // @ts-ignore
-  htmlContent: Buffer;
+  s3DocumentKey: string;
 }
 
 export type CreditCardDisclosureDocumentFilter = {
