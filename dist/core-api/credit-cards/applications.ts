@@ -22,5 +22,6 @@ export interface CreditCardApplication {
   lineAssignmentCents: number;
 
   disclosuresAcceptedAt: Optional<string>;
-  disclosuresUrl: Optional<string>;
+  disclosuresName: Optional<string>;
+  disclosuresDocumentId: Optional<string>;
 }
