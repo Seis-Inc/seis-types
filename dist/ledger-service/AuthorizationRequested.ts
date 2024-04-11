@@ -1,3 +1,5 @@
+import {AuthorizationType} from "./AuthorizationType";
+
 export type AuthorizationRequested = {
   amountCents: number;
   externalAccountId: string;
@@ -5,5 +7,7 @@ export type AuthorizationRequested = {
   merchantMcc: string;
   merchantName: string;
   network: string;
+  acquirerFeeCents:string;
+  type:AuthorizationType;
   externalId: string;
 }
