@@ -5,8 +5,8 @@ export type CreditCardDisclosureDocument = {
   id: string;
   userId: string;
   disclosureName: string;
-  // @ts-ignore
   s3DocumentKey: string;
+  creditCardApplicationId: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -14,13 +14,14 @@ export type CreditCardDisclosureDocument = {
 export type CreditCardDisclosureDocumentInput = {
   userId: string;
   disclosureName: string;
-  // @ts-ignore
   s3DocumentKey: string;
+  creditCardApplicationId: string;
 }
 
 export type CreditCardDisclosureDocumentFilter = {
   id?: string;
   userId?: string;
+  creditCardApplicationId?: string;
 } & ListOptions;
 
 export type CreditCardDisclosureDocumentPage = Page<CreditCardDisclosureDocument>
