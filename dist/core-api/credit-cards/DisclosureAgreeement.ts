@@ -5,7 +5,6 @@ export type CreditCardDisclosureDocument = {
   id: string;
   userId: string;
   disclosureName: string;
-  s3DocumentKey: string;
   creditCardApplicationId: string;
   createdAt: string;
   updatedAt: string;
@@ -14,7 +13,6 @@ export type CreditCardDisclosureDocument = {
 export type CreditCardDisclosureDocumentInput = {
   userId: string;
   disclosureName: string;
-  s3DocumentKey: string;
   creditCardApplicationId: string;
 }
 
