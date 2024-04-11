@@ -7,6 +7,6 @@ export type AuthorizationCreated = {
   merchantName: string;
   network: string;
   externalId: string;
-  acquirerFeeCents:string;
+  acquirerFeeCents:number;
   type:AuthorizationType;
 }

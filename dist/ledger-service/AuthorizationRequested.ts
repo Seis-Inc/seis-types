@@ -7,7 +7,7 @@ export type AuthorizationRequested = {
   merchantMcc: string;
   merchantName: string;
   network: string;
-  acquirerFeeCents:string;
-  type:AuthorizationType;
+  acquirerFeeCents: number;
+  type: AuthorizationType;
   externalId: string;
 }
