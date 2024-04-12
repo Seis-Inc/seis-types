@@ -7,6 +7,8 @@ export type CreditCardApplicationDocument = {
     leadName: string
     type: string
     creditCardApplicationId: string
+    acceptedAt: string
+    uploadedToLeadAt: string
     createdAt: string
     updatedAt: string
   }
@@ -16,6 +18,8 @@ export type CreditCardApplicationDocument = {
     type: string
     leadName: string
     creditCardApplicationId: string
+    uploadedToLeadAt: string
+    acceptedAt: string
   }
 
   export type CreditCardApplicationDocumentFilter = {
