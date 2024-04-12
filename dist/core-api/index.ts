@@ -53,3 +53,7 @@ export {CreditCardPatch} from './credit-cards/CreditCardPatch'
 export {CreditCardFilter} from './credit-cards/CreditCardFilter'
 export {CreditCardPage} from './credit-cards/CreditCardPage'
 export {CreditCardType} from './credit-cards/CreditCardType'
+
+export {CreateFederalPrimeInterestRateInput} from './credit-cards/CreateFederalPrimeInterestRateInput'
+export {FederalPrimeInterestRate} from './credit-cards/FederalPrimeInterestRate'
+export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './credit-cards/FederalPrimeInterestRateFilter'
