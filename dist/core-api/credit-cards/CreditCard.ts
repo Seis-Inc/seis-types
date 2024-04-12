@@ -1,7 +1,9 @@
+import {CreditCardType} from "./CreditCardType";
+
 export type CreditCard = {
   id: string;
   userId: string;
-  type: string;
+  type: CreditCardType;
   status: string;
   design: string;
   expirationDate: string;

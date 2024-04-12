@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
+exports.CreditCardType = exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
 var NetworkPaymentStatus_1 = require("./networkPayments/NetworkPaymentStatus");
 Object.defineProperty(exports, "NetworkPaymentStatus", { enumerable: true, get: function () { return NetworkPaymentStatus_1.NetworkPaymentStatus; } });
 var NetworkUserOptions_1 = require("./networkPayments/NetworkUserOptions");
@@ -17,4 +17,6 @@ Object.defineProperty(exports, "CreditCardPaymentStatus", { enumerable: true, ge
 Object.defineProperty(exports, "CreditCardAccountAutopayPaymentStatus", { enumerable: true, get: function () { return payments_1.CreditCardAccountAutopayPaymentStatus; } });
 var periods_1 = require("./credit-cards/periods");
 Object.defineProperty(exports, "CreditCardAccountPeriodStatus", { enumerable: true, get: function () { return periods_1.CreditCardAccountPeriodStatus; } });
+var CreditCardType_1 = require("./credit-cards/CreditCardType");
+Object.defineProperty(exports, "CreditCardType", { enumerable: true, get: function () { return CreditCardType_1.CreditCardType; } });
 //# sourceMappingURL=index.js.map
