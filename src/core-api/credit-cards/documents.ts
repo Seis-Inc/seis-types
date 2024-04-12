@@ -7,8 +7,8 @@ export type CreditCardApplicationDocument = {
     leadName: string
     type: string
     creditCardApplicationId: string
-    acceptedAt: string
-    uploadedToLeadAt: string
+    acceptedAt: string | null
+    uploadedToLeadAt: string | null
     createdAt: string
     updatedAt: string
   }
@@ -29,5 +29,5 @@ export type CreditCardApplicationDocument = {
     type?: string
   } & ListOptions
 
-  export type CreditCardDisclosureDocumentPage =
+  export type CreditCardApplicationDocumentPage =
     Page<CreditCardApplicationDocument>
