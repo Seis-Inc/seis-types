@@ -5,6 +5,11 @@ export type AuthorizationCreated = {
   accountId: string;
   merchantMcc: string;
   merchantName: string;
+  merchantCity: string | null;
+  merchantState: string | null;
+  merchantZip: string | null;
+  merchantCountryCode: string | null;
+  cardId: string;
   network: string;
   externalId: string;
   acquirerFeeCents:number;

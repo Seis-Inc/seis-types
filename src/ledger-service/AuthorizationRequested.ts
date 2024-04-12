@@ -6,6 +6,11 @@ export type AuthorizationRequested = {
   merchantId: string;
   merchantMcc: string;
   merchantName: string;
+  merchantCity: string | null;
+  merchantState: string | null;
+  merchantZip: string | null;
+  merchantCountryCode: string | null;
+  cardId: string;
   network: string;
   acquirerFeeCents: number;
   type: AuthorizationType;
