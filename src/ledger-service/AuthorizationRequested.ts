@@ -6,6 +6,7 @@ export type AuthorizationRequested = {
   merchantId: string;
   merchantMcc: string;
   merchantName: string;
+  merchantAddress: string | null;
   merchantCity: string | null;
   merchantState: string | null;
   merchantZip: string | null;
