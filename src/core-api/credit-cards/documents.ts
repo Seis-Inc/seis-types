@@ -26,6 +26,7 @@ export type CreditCardApplicationDocument = {
     id?: string
     userId?: string
     creditCardApplicationId?: string
+    type?: string
   } & ListOptions
 
   export type CreditCardDisclosureDocumentPage =
