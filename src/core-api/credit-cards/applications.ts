@@ -24,4 +24,6 @@ export interface CreditCardApplication {
 
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
+
+  taktileDecisionUrl: Optional<string>
 }
