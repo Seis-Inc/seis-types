@@ -28,6 +28,7 @@ export type CreditCardAccount = {
     balanceCents: number;
     name: string;
     autopayConfiguration: CreditCardAccountAutopayConfiguration | null;
+	lithicAccountToken: string | null;
     idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;
