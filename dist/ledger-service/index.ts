@@ -1,6 +1,7 @@
 export {TransactionCreated} from "./TransactionCreated";
 export {AuthorizationCreated} from "./AuthorizationCreated";
 export {AuthorizationRequested} from "./AuthorizationRequested";
+export {Account} from "./Account";
 export {AuthorizationEvent} from "./AuthorizationEvent";
 export {AuthorizationEventType} from "./AuthorizationEventType";
 export {AccountCreated} from "./AccountCreated";
