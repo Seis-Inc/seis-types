@@ -7,3 +7,4 @@ export {AuthorizationEventType} from "./AuthorizationEventType";
 export {AccountCreated} from "./AccountCreated";
 export {AuthorizationType} from "./AuthorizationType";
 export {AuthorizationCancelationRequested} from "./AuthorizationCancelationRequested";
+export {CreditCardCreated} from "./CreditCardCreated";
