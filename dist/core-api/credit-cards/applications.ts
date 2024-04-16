@@ -7,6 +7,14 @@ export interface CreditCardApplicationFilter extends ListOptions {
   userId?: string
 }
 
+export interface CreditCardApplicationTaktileDecision {
+  id: string
+	applicationId: string;
+	inputData: Record<string, any>;
+	decisionDate: string;
+  decisionUrl: string;
+}
+
 export enum CreditCardApplicationProgress {
 	NotStarted = 'NotStarted',
 	IncomeAndExpensesConfirmed = 'IncomeAndExpensesConfirmed',
@@ -37,11 +45,8 @@ export interface CreditCardApplication {
   progress: CreditCardApplicationProgress
   status: CreditCardApplicationStatus
 
-  taktileInputData: Optional<Record<string, any>>
-  taktileDecisionDate: Optional<string>
-  
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
 
-  taktileDecisionUrl: Optional<string>
+  taktileDecision: Optional<CreditCardApplicationTaktileDecision>
 }
