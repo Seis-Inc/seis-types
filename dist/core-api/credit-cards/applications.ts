@@ -7,6 +7,19 @@ export interface CreditCardApplicationFilter extends ListOptions {
   userId?: string
 }
 
+export enum CreditCardApplicationProgress {
+	NotStarted = 'NotStarted',
+	IncomeAndExpensesConfirmed = 'IncomeAndExpensesConfirmed',
+	ApplicationConsentGranted = 'ApplicationConsentGranted',
+	DisclosuresAccepted = 'DisclosuresAccepted'
+}
+
+export enum CreditCardApplicationStatus {
+	Pending = 'Pending',
+	Approved = 'Approved',
+	Declined = 'Declined'
+}
+
 export interface CreditCardApplication {
   id: string
   userId: string
@@ -19,9 +32,14 @@ export interface CreditCardApplication {
   consentGrantedAt: Optional<string>
   consentAgreementUrl: Optional<string>
 
-  approved: boolean
   lineAssignmentCents: number
 
+  progress: CreditCardApplicationProgress
+  status: CreditCardApplicationStatus
+
+  taktileInputData: Optional<Record<string, any>>
+  taktileDecisionDate: Optional<string>
+  
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
 

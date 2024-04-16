@@ -43,6 +43,8 @@ export {
   FilterCreditCardAccountStatementPeriodsInput,
 } from "./credit-cards/periods";
 export {
+  CreditCardApplicationProgress,
+  CreditCardApplicationStatus,
   CreditCardApplicationFilter,
   CreditCardApplication,
 } from "./credit-cards/applications";
