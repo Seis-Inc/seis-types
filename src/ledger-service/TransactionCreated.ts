@@ -2,6 +2,7 @@ type TransactionType = 'Payment' | 'Interest' | 'CardTransaction'
 
 export type TransactionCreated = {
   id: string | null,
+  authorizationId: string | null,
   fromAccountId: string,
   fromCardId: string | null,
   toAccountId: string,
