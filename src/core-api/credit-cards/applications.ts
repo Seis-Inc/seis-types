@@ -20,6 +20,15 @@ export enum CreditCardApplicationStatus {
 	Declined = 'Declined'
 }
 
+export type CreditCardApplicationDecision = {
+  id: string
+  creditCardApplicationId: string
+  inputData: Record<string, any>
+  decisionDate: string;
+  decisionUrl: string;
+  createdAt: string;
+}
+
 export interface CreditCardApplication {
   id: string
   userId: string
@@ -37,11 +46,9 @@ export interface CreditCardApplication {
   progress: CreditCardApplicationProgress
   status: CreditCardApplicationStatus
 
-  taktileInputData: Optional<Record<string, any>>
-  taktileDecisionDate: Optional<string>
-  
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
 
-  taktileDecisionUrl: Optional<string>
+  decision: Optional<CreditCardApplicationDecision>
+
 }
