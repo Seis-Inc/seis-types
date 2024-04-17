@@ -4,7 +4,7 @@ import { Page } from "../common/Page"
 export type CreditCardApplicationDocument = {
     id: string
     userId: string
-    leadName: string
+    leadName: string | null
     type: string
     creditCardApplicationId: string
     acceptedAt: string | null
@@ -16,10 +16,10 @@ export type CreditCardApplicationDocument = {
   export type CreditCardApplicationDocumentInput = {
     userId: string
     type: string
-    leadName: string
+    leadName?: string
     creditCardApplicationId: string
-    uploadedToLeadAt: string
-    acceptedAt: string
+    uploadedToLeadAt?: string
+    acceptedAt?: string
   }
 
   export type CreditCardApplicationDocumentFilter = {
