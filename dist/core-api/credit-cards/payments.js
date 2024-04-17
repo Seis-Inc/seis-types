@@ -11,6 +11,7 @@ var CreditCardPaymentStatus;
 ;
 var CreditCardAccountAutopayPaymentStatus;
 (function (CreditCardAccountAutopayPaymentStatus) {
+    CreditCardAccountAutopayPaymentStatus["Pending"] = "Pending";
     CreditCardAccountAutopayPaymentStatus["Paid"] = "Paid";
     CreditCardAccountAutopayPaymentStatus["Failed"] = "Failed";
     CreditCardAccountAutopayPaymentStatus["Cancelled"] = "Cancelled";

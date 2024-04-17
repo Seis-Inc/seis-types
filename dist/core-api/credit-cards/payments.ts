@@ -8,6 +8,7 @@ export enum CreditCardPaymentStatus{
 };
 
 export enum CreditCardAccountAutopayPaymentStatus {
+    Pending = 'Pending',
     Paid = 'Paid',
     Failed = 'Failed',
     Cancelled = 'Cancelled'
@@ -35,6 +36,7 @@ export type CreditCardAccountPayment = {
     paidAt: string | null;
     createdAt: string;
     updatedAt: string;
+    autopay?: CreditCardAccountAutopayPayment;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
