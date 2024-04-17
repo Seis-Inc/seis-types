@@ -31,13 +31,14 @@ export type CreditCardAccountPayment = {
     status: CreditCardPaymentStatus;
     amountCents: number;
     bookPaymentId: string | null;
+    ddaAccountId: string | null;
     paidAt: string | null;
     createdAt: string;
     updatedAt: string;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
-export type PatchCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
+export type PatchCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt' | 'ddaAccountId'>>;
 export type FindCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
 export type GetCreditCardAccountPaymentInput = {
     creditCardAccountId: string;
