@@ -22,7 +22,6 @@ export enum CreditCardApplicationStatus {
 }
 
 export type CreditCardApplicationDecision = {
-  id: string
   creditCardApplicationId: string
   inputData: Record<string, any>
   decisionDate: string;
@@ -35,8 +34,8 @@ export interface CreditCardApplication {
   userId: string
   idempotencyKey: string
 
-  monthlyIncomeCents: Optional<number>
-  monthlyExpensesCents: Optional<number>
+  statedMonthlyIncomeCents: Optional<number>
+  statedMonthlyExpensesCents: Optional<number>
   incomeAndExpensesConfirmedAt: Optional<string>
 
   consentGrantedAt: Optional<string>
