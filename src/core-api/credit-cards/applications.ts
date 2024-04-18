@@ -26,6 +26,7 @@ export type CreditCardApplicationDecision = {
   decisionDate: string;
   decisionUrl: string;
   createdAt: string;
+  updatedAt: string;
 }
 
 export interface CreditCardApplication {
