@@ -4,7 +4,7 @@ export enum CreditCardAccountStatus {
     Open = 'Open',
     Closed = 'Closed',
     Frozen = 'Frozen'
-};
+}
 
 export enum CreditCardAccountScheduledPaymentAmountType {
 	MinimumPayment = 'MinimumPayment',
@@ -12,12 +12,12 @@ export enum CreditCardAccountScheduledPaymentAmountType {
 	MinimumPaymentPlus = 'MinimumPaymentPlus',
 	FullAccountBalance = 'FullAccountBalance',
 	CustomPayment = 'CustomPayment'
-};
+}
 
 export enum CreditCardAccountScheduledPaymentType {
   ScheduledOnDueDate = 'ScheduledOnDueDate',
   ScheduledOnStatementDate = 'ScheduledOnStatementDate'
-};
+}
 
 export type CreditCardAccount = {
     id: string;
@@ -28,7 +28,8 @@ export type CreditCardAccount = {
     balanceCents: number;
     name: string;
     autopayConfiguration: CreditCardAccountAutopayConfiguration | null;
-	lithicAccountToken: string | null;
+	  lithicAccountToken: string | null;
+	  debtAccountId: string;
     idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;

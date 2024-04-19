@@ -7,7 +7,6 @@ var CreditCardAccountStatus;
     CreditCardAccountStatus["Closed"] = "Closed";
     CreditCardAccountStatus["Frozen"] = "Frozen";
 })(CreditCardAccountStatus || (exports.CreditCardAccountStatus = CreditCardAccountStatus = {}));
-;
 var CreditCardAccountScheduledPaymentAmountType;
 (function (CreditCardAccountScheduledPaymentAmountType) {
     CreditCardAccountScheduledPaymentAmountType["MinimumPayment"] = "MinimumPayment";
@@ -16,13 +15,11 @@ var CreditCardAccountScheduledPaymentAmountType;
     CreditCardAccountScheduledPaymentAmountType["FullAccountBalance"] = "FullAccountBalance";
     CreditCardAccountScheduledPaymentAmountType["CustomPayment"] = "CustomPayment";
 })(CreditCardAccountScheduledPaymentAmountType || (exports.CreditCardAccountScheduledPaymentAmountType = CreditCardAccountScheduledPaymentAmountType = {}));
-;
 var CreditCardAccountScheduledPaymentType;
 (function (CreditCardAccountScheduledPaymentType) {
     CreditCardAccountScheduledPaymentType["ScheduledOnDueDate"] = "ScheduledOnDueDate";
     CreditCardAccountScheduledPaymentType["ScheduledOnStatementDate"] = "ScheduledOnStatementDate";
 })(CreditCardAccountScheduledPaymentType || (exports.CreditCardAccountScheduledPaymentType = CreditCardAccountScheduledPaymentType = {}));
-;
 var CreditCardAccountAutopayConfigurationStatus;
 (function (CreditCardAccountAutopayConfigurationStatus) {
     CreditCardAccountAutopayConfigurationStatus["Active"] = "Active";
