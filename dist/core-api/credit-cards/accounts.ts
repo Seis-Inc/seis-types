@@ -79,6 +79,7 @@ export type FindCreditCardAccountInput = {
   autopayAt?: string;
   balanceCentsGreaterThan?: number;
 	lithicAccountToken?: string;
+	creditCardId?:string;
 } & ListOptions;
 
 export type FilterCreditCardAccountAutopayConfiguration = {
