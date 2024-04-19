@@ -12,7 +12,7 @@ export type AuthorizationCreated = {
   merchantCountryCode: string | null;
   cardId: string;
   network: string;
-  externalId: string;
+  id: string;
   acquirerFeeCents:number;
   type:AuthorizationType;
 }

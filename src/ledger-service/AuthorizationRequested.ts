@@ -14,5 +14,5 @@ export type AuthorizationRequested = {
   network: string;
   acquirerFeeCents: number;
   type: AuthorizationType;
-  externalId: string;
+  id: string;
 }
