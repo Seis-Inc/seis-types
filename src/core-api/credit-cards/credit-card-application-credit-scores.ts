@@ -3,7 +3,7 @@ export type CreditCardApplicationCreditScore = {
     id: string;
     creditCardApplicationId: string;
     creditScoreModel?: string;
-    creditScore?: number;
+    creditScore?: string;
     creditScoreReport?: any;
     createdAt: string;
 };
