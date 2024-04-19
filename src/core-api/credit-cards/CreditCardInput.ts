@@ -1,5 +1,6 @@
 
 export type CreditCardInput = {
+  id: string;
   userId: string;
   type: string;
   status: string;
