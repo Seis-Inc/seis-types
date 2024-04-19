@@ -1,3 +1,3 @@
 export type AuthorizationCancelationRequested = {
-  authorizationId:string | null;
+  authorizationId:string;
 }
