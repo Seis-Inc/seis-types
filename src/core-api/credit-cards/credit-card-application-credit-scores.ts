@@ -2,6 +2,7 @@
 export type CreditCardApplicationCreditScore = {
     id: string;
     creditCardApplicationId: string;
+    creditScoreModel?: string;
     creditScore?: number;
     creditScoreReport?: any;
     createdAt: string;
