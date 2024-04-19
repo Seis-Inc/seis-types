@@ -1,6 +1,7 @@
 import { ListOptions } from '../common/ListOptions'
 import { Optional } from '../common/Optional'
 import { Page } from '../common/Page'
+import { CreditCardApplicationCreditScore } from './credit-card-application-credit-scores'
 
 export interface CreditCardApplicationFilter extends ListOptions {
   id?: string
@@ -51,4 +52,5 @@ export interface CreditCardApplication {
 
   decision: Optional<CreditCardApplicationDecision>
 
+  creditScore: Optional<CreditCardApplicationCreditScore>
 }
