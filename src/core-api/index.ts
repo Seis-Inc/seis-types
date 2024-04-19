@@ -61,3 +61,5 @@ export {FederalPrimeInterestRate} from './credit-cards/FederalPrimeInterestRate'
 export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './credit-cards/FederalPrimeInterestRateFilter'
 
 export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecuredAccountFilter, CreditCardSecuredAccountPage, CreateCreditCardSecuredAccountInput, PatchCreditCardSecuredAccountInput} from './credit-cards/secured-accounts';
+
+export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput} from './credit-cards/credit-card-application-credit-scores'
