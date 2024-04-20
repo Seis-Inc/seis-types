@@ -5,6 +5,8 @@ export type CreditCardApplicationCreditScore = {
     creditScoreModel?: string;
     creditScore?: string;
     creditScoreReport?: any;
+    bloomConsumerId?: string;
+    bloomOrderId?: string;
     createdAt: string;
 };
 
