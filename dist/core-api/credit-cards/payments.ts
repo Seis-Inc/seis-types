@@ -48,4 +48,5 @@ export type GetCreditCardAccountPaymentInput = {
 
 export type FindCreditCardPaymentInput = {
     creditCardAccountId?: string;
+    
 } & ListOptions;
