@@ -1,4 +1,17 @@
-import { CreditCard } from "./CreditCard";
-
-export type CreditCardInput = Omit<CreditCard, 'id' | 'createdAt' | 'updatedAt' | 'activatedAt' | 'canceledAt' | 'cancelationReason'>;
-
+export type CreditCardInput = {
+    id: string;
+    userId: string;
+    type: string;
+    status: string;
+    design: string;
+    expirationDate: string;
+    last4Digits: string;
+    bin: string;
+    shippingMethod?: string | null;
+    token: string;
+    digitalCardArtToken?: string | null;
+    creditCardAccountId: string;
+    activatedAt?: string | null;
+    canceledAt?: string | null;
+    cancelationReason?: string | null;
+  };
