@@ -1,4 +1,4 @@
-type TransactionType = 'Payment' | 'Interest' | 'CardTransaction'
+type TransactionType = 'Payment' | 'Interest' | 'CardTransaction' | 'Fee' | 'Adjustment'
 
 export type TransactionCreated = {
   toId: string | null,
