@@ -30,7 +30,7 @@ export type FindCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAc
 export type CreditCardAccountPayment = {
     id: string;
     creditCardAccountId: string;
-    statementId: string | null;
+    creditCardAccountStatementId: string | null;
     status: CreditCardPaymentStatus;
     amountCents: number;
     bookPaymentId: string | null;
