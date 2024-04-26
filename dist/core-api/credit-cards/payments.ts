@@ -1,4 +1,5 @@
 import {ListOptions} from "../common/ListOptions";
+import { CreditCardAccountStatementPeriod } from "./periods";
 
 export enum CreditCardPaymentStatus{
     Failed = 'Failed',
@@ -29,6 +30,7 @@ export type FindCreditCardAccountAutopayPaymentInput = Partial<Omit<CreditCardAc
 export type CreditCardAccountPayment = {
     id: string;
     creditCardAccountId: string;
+    statementId: string | null;
     status: CreditCardPaymentStatus;
     amountCents: number;
     bookPaymentId: string | null;
@@ -36,7 +38,8 @@ export type CreditCardAccountPayment = {
     paidAt: string | null;
     createdAt: string;
     updatedAt: string;
-    autopay?: CreditCardAccountAutopayPayment;
+    autopay?: CreditCardAccountAutopayPayment; // @deprecated
+    statement?: CreditCardAccountStatementPeriod
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
