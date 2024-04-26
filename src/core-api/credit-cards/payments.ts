@@ -49,6 +49,7 @@ export type GetCreditCardAccountPaymentInput = {    creditCardAccountId: string;
 };
 
 export type FindCreditCardPaymentInput = {
+    id?: string;
     creditCardAccountId?: string;
     statusIn?: CreditCardPaymentStatus[];
     creditCardAccountStatementId?: string;
