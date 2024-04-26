@@ -1,4 +1,5 @@
 import { ListOptions } from '../common/ListOptions';
+import { CreditCardAccountPayment } from './payments';
 
 export enum CreditCardAccountPeriodStatus {
     NotDue = 'NotDue',
@@ -30,12 +31,13 @@ export type CreditCardAccountStatementPeriod = {
     interestDueCents: number;
     minimumPaymentCents: number;
     paidAt: string | null;
+    payments: CreditCardAccountPayment[]
     createdAt: Date;
     updatedAt: Date;
 };
 
 export type CreateCreditCardAccountScheduledPeriodInput = Omit<CreditCardAccountScheduledPeriod, 'id' | 'createdAt' | 'updatedAt'>;
-export type CreateCreditCardAccountStatementPeriodInput = Omit<CreditCardAccountStatementPeriod, 'id' | 'createdAt' | 'updatedAt'>;
+export type CreateCreditCardAccountStatementPeriodInput = Omit<CreditCardAccountStatementPeriod, 'id' | 'createdAt' | 'updatedAt' | 'payments'>;
 
 export type PatchCreditCardAccountScheduledPeriodInput = Partial<CreateCreditCardAccountScheduledPeriodInput>;
 export type PatchCreditCardAccountStatementPeriodInput = Partial<CreateCreditCardAccountStatementPeriodInput>;
