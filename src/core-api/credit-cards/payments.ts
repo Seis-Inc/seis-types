@@ -39,7 +39,7 @@ export type CreditCardAccountPayment = {
     createdAt: string;
     updatedAt: string;
     autopay?: CreditCardAccountAutopayPayment; // @deprecated
-    statement?: CreditCardAccountStatementPeriod
+    statement?: CreditCardAccountStatementPeriod | null;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
