@@ -1,4 +1,6 @@
 import {ListOptions} from "../common/ListOptions";
+import { Optional } from "../common/Optional";
+import { CreditCardSecuredAccount } from "./secured-accounts";
 
 export enum CreditCardAccountStatus {
     Open = 'Open',
@@ -33,6 +35,7 @@ export type CreditCardAccount = {
     idempotencyKey: string | null;
     createdAt: string;
     updatedAt: string;
+	securedAccount: Optional<CreditCardSecuredAccount>
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
