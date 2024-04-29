@@ -50,7 +50,9 @@ export interface CreditCardApplication {
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
 
+  bloomConsumerId: Optional<string>
+
   decision: Optional<CreditCardApplicationDecision>
 
-  creditScore: Optional<CreditCardApplicationCreditScore>
+  creditScores: Optional<CreditCardApplicationCreditScore[]>
 }

@@ -39,17 +39,18 @@ export type CreditCardAccountPayment = {
     createdAt: string;
     updatedAt: string;
     autopay?: CreditCardAccountAutopayPayment; // @deprecated
-    statement?: CreditCardAccountStatementPeriod
+    statement?: CreditCardAccountStatementPeriod | null;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
 export type PatchCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt' | 'ddaAccountId'>>;
-export type FindCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'createdAt' | 'updatedAt'>> & ListOptions;
-export type GetCreditCardAccountPaymentInput = {
-    creditCardAccountId: string;
+export type FindCreditCardAccountPaymentInput = FindCreditCardPaymentInput;
+export type GetCreditCardAccountPaymentInput = {    creditCardAccountId: string;
 };
 
 export type FindCreditCardPaymentInput = {
+    id?: string;
     creditCardAccountId?: string;
-    
+    statusIn?: CreditCardPaymentStatus[];
+    creditCardAccountStatementId?: string;
 } & ListOptions;
