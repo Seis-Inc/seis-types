@@ -13,6 +13,7 @@ export type AuthorizationRequested = {
   merchantCountryCode: string | null;
   network: string;
   acquirerFeeCents: number;
+  originalCurrencyCode: string | 'USD';
   type: AuthorizationType;
   id: string;
 }
