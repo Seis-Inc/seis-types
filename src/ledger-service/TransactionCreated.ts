@@ -16,6 +16,7 @@ export type TransactionCreated = {
   externalId: string | null,
   type: TransactionType,
   idempotencyKey: string | null,
+  originalCurrencyCode: string | 'USD',
 }
 
 
