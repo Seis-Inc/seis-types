@@ -52,5 +52,5 @@ export interface CreditCardApplication {
 
   decision: Optional<CreditCardApplicationDecision>
 
-  creditScore: Optional<CreditCardApplicationCreditScore>
+  creditScore: Optional<CreditCardApplicationCreditScore[]>
 }
