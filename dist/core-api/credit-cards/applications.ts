@@ -30,6 +30,15 @@ export type CreditCardApplicationDecision = {
   updatedAt: string;
 }
 
+export enum CreditCardCustomerApplicationStep {
+  InputIncomeAndExpenses = 'InputIncomeAndExpenses',
+  AcceptConsent = 'AcceptConsent',
+  AwaitReview = 'AwaitReview',
+  AcceptDisclosures = 'AcceptDisclosures',
+  Approved = 'Approved',
+  Denied = 'Denied'
+}
+
 export interface CreditCardApplication {
   id: string
   userId: string
