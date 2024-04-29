@@ -1,8 +1,8 @@
 export enum AuthorizationEventType {
   //NounPastTenseVerb = 'NounPastTenseVerb'
-  AuthorizationDeclined = 'AuthorizationDeclined',
+  AuthorizationAmountChanged = 'AuthorizationAmountChanged',
   AuthorizationApproved = 'AuthorizationApproved',
   AuthorizationCanceled = 'AuthorizationCanceled',
+  AuthorizationDeclined = 'AuthorizationDeclined',
   AuthorizationFinalized = 'AuthorizationFinalized'
-  //AuthorizationAmountChanged = 'AuthorizationAmountChanged'
 }

@@ -4,10 +4,10 @@ exports.AuthorizationEventType = void 0;
 var AuthorizationEventType;
 (function (AuthorizationEventType) {
     //NounPastTenseVerb = 'NounPastTenseVerb'
-    AuthorizationEventType["AuthorizationDeclined"] = "AuthorizationDeclined";
+    AuthorizationEventType["AuthorizationAmountChanged"] = "AuthorizationAmountChanged";
     AuthorizationEventType["AuthorizationApproved"] = "AuthorizationApproved";
     AuthorizationEventType["AuthorizationCanceled"] = "AuthorizationCanceled";
+    AuthorizationEventType["AuthorizationDeclined"] = "AuthorizationDeclined";
     AuthorizationEventType["AuthorizationFinalized"] = "AuthorizationFinalized";
-    //AuthorizationAmountChanged = 'AuthorizationAmountChanged'
 })(AuthorizationEventType || (exports.AuthorizationEventType = AuthorizationEventType = {}));
 //# sourceMappingURL=AuthorizationEventType.js.map
