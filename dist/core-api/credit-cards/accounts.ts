@@ -25,6 +25,7 @@ export type CreditCardAccount = {
     id: string;
     userId: string;
     status: CreditCardAccountStatus;
+	unsecuredCreditLimitCents: number;
     creditLimitCents: number;
     interestRate: number;
     balanceCents: number;
