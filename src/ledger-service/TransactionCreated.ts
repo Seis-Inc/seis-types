@@ -10,13 +10,21 @@ export type TransactionCreated = {
   toCardId: string | null,
   amountCents: number,
   description: string,
-  merchantLocation: string | null,
-  merchantName: string | null,
-  merchantCode: string | null,
   externalId: string | null,
   type: TransactionType,
   idempotencyKey: string | null,
   originalCurrencyCode: string | 'USD',
+
+  originalCreatedAt?: string;
+  network?: string | null;
+  merchantId?: string | null;
+  merchantName?: string | null;
+  merchantAddress?: string | null;
+  merchantCity?: string | null;
+  merchantState?: string | null;
+  merchantZip?: string | null;
+  merchantCountryCode?: string | null;
+  merchantMcc?: string | null;
 }
 
 
