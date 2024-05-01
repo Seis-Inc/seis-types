@@ -14,7 +14,7 @@ export type TransactionCreated = {
   type: TransactionType,
   idempotencyKey: string | null,
   originalCurrencyCode: string | 'USD',
-
+  acquirerFeeCents: number;
   originalCreatedAt?: string;
   network?: string | null;
   merchantId?: string | null;
