@@ -9,3 +9,4 @@ export {AuthorizationType} from "./AuthorizationType";
 export {AuthorizationCancelationRequested} from "./AuthorizationCancelationRequested";
 export {AuthorizationAmountUpdated} from "./AuthorizationAmountUpdated";
 export {CreditCardCreated} from "./CreditCardCreated";
+export {AccountCreditLimitUpdated} from "./AccountCreditLimitUpdated";
