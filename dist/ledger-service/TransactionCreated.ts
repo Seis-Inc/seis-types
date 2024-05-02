@@ -25,7 +25,7 @@ export type TransactionCreated = {
   merchantZip?: string | null;
   merchantCountryCode?: string | null;
   merchantMcc?: string | null;
-  settledAt?: string | null;
+  createdAt?: string | null;
 }
 
 
