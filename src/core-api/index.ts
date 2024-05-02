@@ -50,6 +50,7 @@ export {
 } from "./credit-cards/applications";
 
 export {CreditCard} from './credit-cards/CreditCard'
+export {CreditCardLithicState} from './credit-cards/CreditCardLithicState'
 export {CreditCardInput} from './credit-cards/CreditCardInput'
 export {CreditCardPatch} from './credit-cards/CreditCardPatch'
 export {CreditCardFilter} from './credit-cards/CreditCardFilter'
