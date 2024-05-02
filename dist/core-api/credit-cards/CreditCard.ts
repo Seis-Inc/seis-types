@@ -1,10 +1,12 @@
 import {CreditCardType} from "./CreditCardType";
+import {CreditCardLithicState} from "./CreditCardLithicState";
 
 export type CreditCard = {
   id: string;
   userId: string;
   type: CreditCardType;
   status: string;
+  lithicState: CreditCardLithicState;
   design: string;
   expirationDate: string;
   last4Digits: string;
