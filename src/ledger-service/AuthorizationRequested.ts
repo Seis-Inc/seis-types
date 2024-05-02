@@ -15,5 +15,6 @@ export type AuthorizationRequested = {
   acquirerFeeCents: number;
   originalCurrencyCode: string | 'USD';
   type: AuthorizationType;
+  authorizedAt: string | null;
   id: string;
 }
