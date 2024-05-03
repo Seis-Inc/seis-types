@@ -4,4 +4,5 @@ export enum AuthorizationType {
   BalanceInquiry= 'BalanceInquiry',
   CreditAuthorization= 'CreditAuthorization',
   FinancialCreditAuthorization= 'FinancialCreditAuthorization',
+  InterestAccrual= 'InterestAccrual',
 }

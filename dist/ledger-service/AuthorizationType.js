@@ -8,5 +8,6 @@ var AuthorizationType;
     AuthorizationType["BalanceInquiry"] = "BalanceInquiry";
     AuthorizationType["CreditAuthorization"] = "CreditAuthorization";
     AuthorizationType["FinancialCreditAuthorization"] = "FinancialCreditAuthorization";
+    AuthorizationType["InterestAccrual"] = "InterestAccrual";
 })(AuthorizationType || (exports.AuthorizationType = AuthorizationType = {}));
 //# sourceMappingURL=AuthorizationType.js.map
