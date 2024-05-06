@@ -12,7 +12,8 @@ export enum CreditCardApplicationProgress {
 	NotStarted = 'NotStarted',
 	IncomeAndExpensesConfirmed = 'IncomeAndExpensesConfirmed',
 	ApplicationConsentGranted = 'ApplicationConsentGranted',
-	DisclosuresAccepted = 'DisclosuresAccepted'
+	DisclosuresAccepted = 'DisclosuresAccepted',
+  ManualReviewNeeded = 'ManualReviewNeeded'
 }
 
 export enum CreditCardApplicationStatus {
@@ -30,7 +31,7 @@ export type CreditCardApplicationDecision = {
   updatedAt: string;
 }
 
-export interface CreditCardApplication {
+export interface CoreCreditCardApplication {
   id: string
   userId: string
   idempotencyKey: string

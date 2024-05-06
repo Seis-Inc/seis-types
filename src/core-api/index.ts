@@ -46,7 +46,7 @@ export {
   CreditCardApplicationProgress,
   CreditCardApplicationStatus,
   CreditCardApplicationFilter,
-  CreditCardApplication,
+  CoreCreditCardApplication,
 } from "./credit-cards/applications";
 
 export {CreditCard} from './credit-cards/CreditCard'

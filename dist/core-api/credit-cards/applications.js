@@ -7,6 +7,7 @@ var CreditCardApplicationProgress;
     CreditCardApplicationProgress["IncomeAndExpensesConfirmed"] = "IncomeAndExpensesConfirmed";
     CreditCardApplicationProgress["ApplicationConsentGranted"] = "ApplicationConsentGranted";
     CreditCardApplicationProgress["DisclosuresAccepted"] = "DisclosuresAccepted";
+    CreditCardApplicationProgress["ManualReviewNeeded"] = "ManualReviewNeeded";
 })(CreditCardApplicationProgress || (exports.CreditCardApplicationProgress = CreditCardApplicationProgress = {}));
 var CreditCardApplicationStatus;
 (function (CreditCardApplicationStatus) {
