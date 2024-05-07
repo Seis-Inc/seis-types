@@ -1,6 +1,6 @@
 {
   "name": "seis-types",
-  "version": "1.1.68",
+  "version": "1.1.69",
   "main": "dist/index.js",
   "author": "Seis Inc",
   "license": "ISC",

@@ -56,4 +56,6 @@ export interface CoreCreditCardApplication {
   decision: Optional<CreditCardApplicationDecision>
 
   creditScores: Optional<CreditCardApplicationCreditScore[]>
+
+  secureFundsBeforeOrder: boolean
 }
