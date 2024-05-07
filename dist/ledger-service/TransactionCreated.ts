@@ -1,13 +1,13 @@
 type TransactionType = 'Payment' | 'Interest' | 'CardTransaction' | 'Fee' | 'Adjustment'
 
 export type TransactionCreated = {
-  toId: string | null,
-  fromId: string | null,
+  id: string | null,
   authorizationId: string | null,
-  fromAccountId: string,
-  fromCardId: string | null,
-  toAccountId: string,
-  toCardId: string | null,
+  accountId: string,
+  cardId: string | null,
+  // This directly increases or decreases the balanceOwedCents
+  // positive amounts increase the balanceOwedCents and negative amounts decrease the balanceOwedCents
+  // Example: payments will be negative and card transactions will be positive
   amountCents: number,
   description: string,
   externalId: string | null,
