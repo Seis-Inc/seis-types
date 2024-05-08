@@ -1,3 +1,3 @@
-import {CreditCard} from "./CreditCard";
+import {CoreCreditCard} from "./CoreCreditCard";
 
-export type CreditCardPatch = Partial<CreditCard> & { id: string };
+export type CreditCardPatch = Partial<CoreCreditCard> & { id: string };
