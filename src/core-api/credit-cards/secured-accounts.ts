@@ -12,7 +12,7 @@ export type CreditCardSecuredAccount = {
     creditCardAccountId: string;
     accountNumber: string;
     status: CreditCardSecuredAccountStatus;
-    balanceCents: number;
+    balanceOwedCents: number;
     holdCents: number;
     availableCents: number;
     createdAt: string;

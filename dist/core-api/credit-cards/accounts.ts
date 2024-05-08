@@ -29,7 +29,7 @@ export type CreditCardAccount = {
 	creditLimitCents: number;
 	availableCreditLimitCents: number;
 	interestRate: number;
-	balanceCents: number;
+	balanceOwedCents: number;
 	name: string;
 	autopayConfiguration: CreditCardAccountAutopayConfiguration | null;
 	lithicAccountToken: string | null;
@@ -83,7 +83,7 @@ export type FindCreditCardAccountInput = {
 	id?: string;
 	userId?: string;
 	autopayAt?: string;
-	balanceCentsGreaterThan?: number;
+	balanceOwedCentsGreaterThan?: number;
 	lithicAccountToken?: string;
 } & ListOptions;
 
