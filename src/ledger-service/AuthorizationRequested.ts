@@ -2,9 +2,9 @@ import {AuthorizationType} from "./AuthorizationType";
 
 export type AuthorizationRequested = {
   amountCents: number;
-  externalCardId: string | null;
-  merchantId: string | null;
-  merchantMcc: string | null;
+  externalCardId: string;
+  merchantId: string;
+  merchantMcc: string;
   merchantName: string | null;
   merchantAddress: string | null;
   merchantCity: string | null;
