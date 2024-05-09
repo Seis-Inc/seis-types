@@ -21,7 +21,6 @@ export type CoreCreditCard = {
   cancelationReason: string | null;
   createdAt: string;
   updatedAt: string;
-  expeditedOrder: boolean;
 };
 
 
