@@ -49,7 +49,7 @@ export {
   CoreCreditCardApplication,
 } from "./credit-cards/applications";
 
-export {CoreCreditCard} from './credit-cards/CoreCreditCard'
+export {CreditCard} from './credit-cards/CreditCard'
 export {CreditCardLithicState} from './credit-cards/CreditCardLithicState'
 export {CreditCardInput} from './credit-cards/CreditCardInput'
 export {CreditCardPatch} from './credit-cards/CreditCardPatch'
