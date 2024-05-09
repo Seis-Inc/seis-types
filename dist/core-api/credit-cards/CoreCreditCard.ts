@@ -2,7 +2,7 @@ import {CreditCardType} from "./CreditCardType";
 import {CreditCardLithicState} from "./CreditCardLithicState";
 import {CreditCardStatus} from "./CreditCardStatus";
 
-export type CreditCard = {
+export type CoreCreditCard = {
   id: string;
   userId: string;
   type: CreditCardType;

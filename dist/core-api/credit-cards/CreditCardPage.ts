@@ -1,4 +1,4 @@
-import {CreditCard} from "./CreditCard";
+import {CoreCreditCard} from "./CoreCreditCard";
 import {Page} from "../common/Page";
 
-export type CreditCardPage = Page<CreditCard>;
+export type CreditCardPage = Page<CoreCreditCard>;

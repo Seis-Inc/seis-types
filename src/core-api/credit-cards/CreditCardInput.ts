@@ -17,4 +17,5 @@ export type CreditCardInput = {
     activatedAt?: string | null;
     canceledAt?: string | null;
     cancelationReason?: string | null;
+    expeditedOrder?: boolean;
   };

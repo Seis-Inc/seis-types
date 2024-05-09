@@ -38,6 +38,7 @@ export type CreditCardAccount = {
 	createdAt: string;
 	updatedAt: string;
 	securedAccount: Optional<CreditCardSecuredAccount>
+	hasSpentMoneyOnPhysicalCard: boolean;
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
@@ -75,7 +76,7 @@ export type CreditCardAccountAutopayConfiguration = {
 export type CreateCreditCardAccountAutopayConfigurationInput = Omit<CreditCardAccountAutopayConfiguration, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>;
 export type PatchCreditCardAccountAutopayConfigurationInput = Partial<Omit<CreditCardAccountAutopayConfiguration, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
 
-export type CreateCreditCardAccountInput = Omit<CreditCardAccount, 'id' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration'>;
+export type CreateCreditCardAccountInput = Omit<CreditCardAccount, 'id' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration' | 'hasSpentMoneyOnPhysicalCard'>;
 
 export type PatchCreditCardAccountInput = Partial<Omit<CreditCardAccount, 'id' | 'userId' | 'createdAt' | 'updatedAt' | 'idempotencyKey' | 'autopayConfiguration'>>;
 
