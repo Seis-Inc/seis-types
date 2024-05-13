@@ -54,6 +54,7 @@ export {CreditCardLithicState} from './credit-cards/CreditCardLithicState'
 export {CreditCardInput} from './credit-cards/CreditCardInput'
 export {CreditCardPatch} from './credit-cards/CreditCardPatch'
 export {CreditCardFilter} from './credit-cards/CreditCardFilter'
+export {CreditCardStatus} from './credit-cards/CreditCardStatus'
 export {CreditCardPage} from './credit-cards/CreditCardPage'
 export {CreditCardType} from './credit-cards/CreditCardType'
 
