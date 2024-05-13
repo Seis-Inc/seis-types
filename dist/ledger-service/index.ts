@@ -1,6 +1,7 @@
 export {TransactionCreated} from "./TransactionCreated";
 export {Transaction} from "./Transaction";
 export {TransactionFilter} from "./TransactionFilter";
+export {AuthorizationFilter} from "./AuthorizationFilter";
 export {AuthorizationCreated} from "./AuthorizationCreated";
 export {AuthorizationRequested} from "./AuthorizationRequested";
 export {Account} from "./Account";

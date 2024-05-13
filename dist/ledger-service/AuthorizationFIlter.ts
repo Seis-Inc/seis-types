@@ -1,4 +1,4 @@
-export type AuthorizationFIlter = {
+export type AuthorizationFilter = {
   accountId: string
   search?: string
   orderBy?: 'NewestFirst' | 'OldestFirst'
