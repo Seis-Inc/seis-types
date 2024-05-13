@@ -1,9 +1,12 @@
+import {AuthorizationStatus} from "./AuthorizationStatus";
+
 export type AuthorizationFilter = {
   accountId: string
   search?: string
   orderBy?: 'NewestFirst' | 'OldestFirst'
   createdAfter?: string
   createdBefore?: string
+  statusIn?: AuthorizationStatus[],
   offset?: number
   limit?: number
 }
