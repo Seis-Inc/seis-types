@@ -6,5 +6,6 @@ var AuthorizationStatus;
     AuthorizationStatus["Finalized"] = "Finalized";
     AuthorizationStatus["Authorized"] = "Authorized";
     AuthorizationStatus["Canceled"] = "Canceled";
+    AuthorizationStatus["Declined"] = "Declined";
 })(AuthorizationStatus || (exports.AuthorizationStatus = AuthorizationStatus = {}));
 //# sourceMappingURL=AuthorizationStatus.js.map

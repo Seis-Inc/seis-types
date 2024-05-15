@@ -1,5 +1,6 @@
 export enum AuthorizationStatus {
   Finalized = 'Finalized',
   Authorized = 'Authorized',
-  Canceled = 'Canceled'
+  Canceled = 'Canceled',
+  Declined = 'Declined'
 }
