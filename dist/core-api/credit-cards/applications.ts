@@ -45,6 +45,8 @@ export interface CoreCreditCardApplication {
 
   lineAssignmentCents: number
 
+  quotedInterestRate: Optional<number>
+
   progress: CreditCardApplicationProgress
   status: CreditCardApplicationStatus
 
