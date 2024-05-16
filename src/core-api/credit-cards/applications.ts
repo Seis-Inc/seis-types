@@ -6,6 +6,7 @@ import { CreditCardApplicationCreditScore } from './credit-card-application-cred
 export interface CreditCardApplicationFilter extends ListOptions {
   id?: string
   userId?: string
+  decisionId?: string;
 }
 
 export enum CreditCardApplicationProgress {
@@ -24,6 +25,7 @@ export enum CreditCardApplicationStatus {
 
 export type CreditCardApplicationDecision = {
   creditCardApplicationId: string
+  decisionId: string
   inputData: Record<string, any>
   decisionDate: string;
   decisionUrl: string;
