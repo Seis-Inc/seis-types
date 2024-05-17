@@ -4,9 +4,9 @@ export type CreditCardApplicationCreditScore = {
     creditCardApplicationId: string;
     creditScoreModel?: string;
     creditScore?: string;
-    creditScoreReport?: any;
     bloomConsumerId?: string;
     bloomOrderId?: string;
+    stracCreditReportId?: string;
     hit?: boolean;
     createdAt: string;
 };
