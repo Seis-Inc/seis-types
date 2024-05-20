@@ -37,6 +37,7 @@ export type CreditCardAccount = {
 	idempotencyKey: string | null;
 	createdAt: string;
 	updatedAt: string;
+	closed_at: string | null;
 	securedAccount: Optional<CreditCardSecuredAccount>
 	hasSpentMoneyOnPhysicalCard: boolean;
 };
