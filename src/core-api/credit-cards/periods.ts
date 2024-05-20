@@ -31,6 +31,7 @@ export type CreditCardAccountStatementPeriod = {
     interestDueCents: number;
     minimumPaymentCents: number;
     paidAt: string | null;
+    securedAccountFinalBalanceCents: number;
     payments: CreditCardAccountPayment[]
     createdAt: Date;
     updatedAt: Date;
