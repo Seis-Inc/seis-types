@@ -22,6 +22,13 @@ export type CreditCardSecuredAccount = {
 export type CreateCreditCardSecuredAccountInput = Omit<CreditCardSecuredAccount, 'id' | 'accountNumber' |'createdAt' | 'updatedAt'>;
 export type PatchCreditCardSecuredAccountInput = Partial<CreateCreditCardSecuredAccountInput>;
 
+
+export type CreditCardSecuredAccountTransactionFilter = {
+    creditCardSecuredAccountId?: string;
+    fromDate?: string;
+    toDate?: string;
+}
+
 export enum CreditCardSecuredAccountTransactionDirection {
 	Debit = 'Debit',
 	Credit = 'Credit'

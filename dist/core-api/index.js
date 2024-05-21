@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreditCardSecuredAccountStatus = exports.CreditCardType = exports.CreditCardStatus = exports.CreditCardLithicState = exports.CreditCardApplicationStatus = exports.CreditCardApplicationProgress = exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
+exports.CreditCardSecuredAccountTransactionDirection = exports.CreditCardSecuredAccountStatus = exports.CreditCardType = exports.CreditCardStatus = exports.CreditCardLithicState = exports.CreditCardApplicationStatus = exports.CreditCardApplicationProgress = exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
 var NetworkPaymentStatus_1 = require("./networkPayments/NetworkPaymentStatus");
 Object.defineProperty(exports, "NetworkPaymentStatus", { enumerable: true, get: function () { return NetworkPaymentStatus_1.NetworkPaymentStatus; } });
 var NetworkUserOptions_1 = require("./networkPayments/NetworkUserOptions");
@@ -28,4 +28,5 @@ var CreditCardType_1 = require("./credit-cards/CreditCardType");
 Object.defineProperty(exports, "CreditCardType", { enumerable: true, get: function () { return CreditCardType_1.CreditCardType; } });
 var secured_accounts_1 = require("./credit-cards/secured-accounts");
 Object.defineProperty(exports, "CreditCardSecuredAccountStatus", { enumerable: true, get: function () { return secured_accounts_1.CreditCardSecuredAccountStatus; } });
+Object.defineProperty(exports, "CreditCardSecuredAccountTransactionDirection", { enumerable: true, get: function () { return secured_accounts_1.CreditCardSecuredAccountTransactionDirection; } });
 //# sourceMappingURL=index.js.map

@@ -62,7 +62,7 @@ export {CreateFederalPrimeInterestRateInput} from './credit-cards/CreateFederalP
 export {FederalPrimeInterestRate} from './credit-cards/FederalPrimeInterestRate'
 export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './credit-cards/FederalPrimeInterestRateFilter'
 
-export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecuredAccountFilter, CreditCardSecuredAccountPage, CreateCreditCardSecuredAccountInput, PatchCreditCardSecuredAccountInput} from './credit-cards/secured-accounts';
+export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecuredAccountFilter, CreditCardSecuredAccountPage, CreateCreditCardSecuredAccountInput, PatchCreditCardSecuredAccountInput, CreditCardSecuredAccountTransaction, CreditCardSecuredAccountTransactionFilter, CreditCardSecuredAccountTransactionDirection, CreditCardSecuredAccountTransaactions} from './credit-cards/secured-accounts';
 
 export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput} from './credit-cards/credit-card-application-credit-scores'
 
