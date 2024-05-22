@@ -36,6 +36,7 @@ export enum CreditCardSecuredAccountTransactionDirection {
 
 export type CreditCardSecuredAccountTransaction = {
 	id: string;
+    creditCardSecuredAccountId: string;
 	createdAt: string;
 	direction: CreditCardSecuredAccountTransactionDirection;
 	amountCents: number;
@@ -47,7 +48,7 @@ export type CreditCardSecuredAccountFilter = {
     status?: CreditCardSecuredAccountStatus;
 } & ListOptions
 
-export type CreditCardSecuredAccountTransaactions = {
+export type CreditCardSecuredAccountTransactions = {
     transactions: CreditCardSecuredAccountTransaction[];
     totalAmountCents: number;
 };
