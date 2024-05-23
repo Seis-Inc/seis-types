@@ -4,5 +4,6 @@ export enum AuthorizationEventType {
   AuthorizationApproved = 'AuthorizationApproved',
   AuthorizationCanceled = 'AuthorizationCanceled',
   AuthorizationDeclined = 'AuthorizationDeclined',
-  AuthorizationFinalized = 'AuthorizationFinalized'
+  AuthorizationExpired = 'AuthorizationExpired',
+  AuthorizationFinalized = 'AuthorizationFinalized',
 }
