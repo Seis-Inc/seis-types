@@ -6,6 +6,7 @@ export {AuthorizationCancelationRequested} from "./AuthorizationCancelationReque
 export {AuthorizationCreated} from "./AuthorizationCreated";
 export {AuthorizationEventType} from "./AuthorizationEventType";
 export {AuthorizationEvent} from "./AuthorizationEvent";
+export {AuthorizationExpired} from "./AuthorizationExpired";
 export {AuthorizationFilter} from "./AuthorizationFilter";
 export {AuthorizationRequested} from "./AuthorizationRequested";
 export {AuthorizationStatus} from "./AuthorizationStatus";
