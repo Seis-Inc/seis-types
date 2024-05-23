@@ -54,3 +54,33 @@ export type CreditCardSecuredAccountTransactions = {
 };
 
 export type CreditCardSecuredAccountPage = Page<CreditCardSecuredAccount>;
+
+export type CreditCardSecuredAccountTransferJob = {
+    id: string;
+    jobId: string;
+    creditCardSecuredAccountId: string;
+    amountCents: number;
+    balanceCents: number;
+    estimatedSettlementDate: string | null,
+    reportDate: string,
+    unitPaymentId: string,
+    createdAt: string;
+};
+
+export type CreateCredtiCardSecuredAccountTransferJobInput = Omit<CreditCardSecuredAccountTransferJob, 'id' | 'createdAt'>;
+
+export type CreditCardSecuredAccountTransferJobTransaction = {
+    id: string;
+    creditCardSecuredAccountTransferJobId: string;
+    transactionId: string;
+    createdAt: string;
+};
+
+export type CreditCardSecuredAccountTransferJobPage = Page<CreditCardSecuredAccountTransferJob>;
+
+export type CreditCardSecuredAccountTransferJobFilter = {
+    creditCardSecuredAccountId?: string;
+} & ListOptions
+
+export type CreateCreditCardSecuredAccountTransferJobTransactionInput = Omit<CreditCardSecuredAccountTransferJobTransaction, 'id' | 'createdAt'>;
+
