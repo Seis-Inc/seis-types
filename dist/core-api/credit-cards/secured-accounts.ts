@@ -67,7 +67,7 @@ export type CreditCardSecuredAccountTransferJob = {
     createdAt: string;
 };
 
-export type CreateCredtiCardSecuredAccountTransferJobInput = Omit<CreditCardSecuredAccountTransferJob, 'id' | 'createdAt'>;
+export type CreateCreditCardSecuredAccountTransferJobInput = Omit<CreditCardSecuredAccountTransferJob, 'id' | 'createdAt'>;
 
 export type CreditCardSecuredAccountTransferJobTransaction = {
     id: string;
