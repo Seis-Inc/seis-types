@@ -63,7 +63,7 @@ export type CreditCardSecuredAccountTransferJob = {
     balanceCents: number;
     estimatedSettlementDate: string | null,
     reportDate: string,
-    unitPaymentId: string,
+    unitPaymentId: string | null,
     createdAt: string;
 };
 
