@@ -64,6 +64,8 @@ export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './cr
 
 export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecuredAccountFilter, CreditCardSecuredAccountPage, CreateCreditCardSecuredAccountInput, PatchCreditCardSecuredAccountInput, CreditCardSecuredAccountTransaction, CreditCardSecuredAccountTransactionFilter, CreditCardSecuredAccountTransactionDirection, CreditCardSecuredAccountTransactions, CreditCardSecuredAccountTransferJob, CreateCreditCardSecuredAccountTransferJobInput, CreditCardSecuredAccountTransferJobTransaction, CreateCreditCardSecuredAccountTransferJobTransactionInput, CreditCardSecuredAccountTransferJobPage, CreditCardSecuredAccountTransferJobFilter} from './credit-cards/secured-accounts';
 
+export {CreditCardDisputeStatus, CreditCardDispute, CreateCreditCardDisputeInput, PatchCreditCardDisputeInput, FindCreditCardDisputeInput, CreditCardDisputePage} from './credit-cards/disputes'
+
 export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput} from './credit-cards/credit-card-application-credit-scores'
 
 export {Address} from './addresses/Address'
