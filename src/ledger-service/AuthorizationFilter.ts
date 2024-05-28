@@ -7,6 +7,7 @@ export type AuthorizationFilter = {
   createdAfter?: string
   createdBefore?: string
   statusIn?: AuthorizationStatus[],
+  nonZero?: true,
   offset?: number
   limit?: number
 }

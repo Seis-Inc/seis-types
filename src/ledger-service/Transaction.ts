@@ -6,6 +6,7 @@ export type Transaction = {
   cardId: string | null;
   direction: 'Credit' | 'Debit';
   description: string;
+  summary: string;
   type: string;
   eventId: string;
   externalId: string | null;
