@@ -1,0 +1,31 @@
+import { ListOptions } from "../common/ListOptions";
+import { Page } from "../common/Page";
+
+export enum CreditCardDisputeStatus {
+    Pending = 'Pending',
+    Denied = 'Denied',
+    ResolvedLost = 'ResolvedLost',
+    ResolvedWon = 'ResolvedWon'
+};
+
+export type CreditCardDispute = {
+    id: string;
+    transactionId: string;
+    creditCardId: string;
+    disputeAmountCents: number;
+    disputeReason: string;
+    status: CreditCardDisputeStatus;
+    reissuedTransactionId: string | null;
+    provisionalCreditIssuedAt: string | null;
+    resolvedAt: string | null;
+    createdAt: string;
+    updatedAt: string;
+}
+
+export type CreateCreditCardDisputeInput = Omit<CreditCardDispute, 'id' | 'createdAt' | 'updatedAt'>;
+
+export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'transactionId' | 'creditCardId' | 'createdAt' | 'updatedAt'>>;
+
+export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'createdAt' | 'updatedAt'>> & ListOptions;
+
+export type CreditCardDisputePage = Page<CreditCardDispute>;
