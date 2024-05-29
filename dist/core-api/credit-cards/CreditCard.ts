@@ -21,6 +21,9 @@ export type CreditCard = {
   cancelationReason: string | null;
   createdAt: string;
   updatedAt: string;
+  shippedAt: string | null;
+  lithicShippingMethod: string | null;
+  trackingNumber: string | null;
 };
 
 
