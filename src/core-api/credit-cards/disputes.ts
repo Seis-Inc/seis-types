@@ -16,7 +16,10 @@ export type CreditCardDispute = {
     disputeReason: string;
     status: CreditCardDisputeStatus;
     reissuedTransactionId: string | null;
+    provisionalCreditTransactionId: string | null;
     provisionalCreditIssuedAt: string | null;
+    provisionalCreditReversalTransactionId: string | null;
+    provisionalCreditReversalIssuedAt: string | null;
     resolvedAt: string | null;
     createdAt: string;
     updatedAt: string;
