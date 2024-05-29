@@ -17,3 +17,4 @@ export {CreditCardCreated} from "./CreditCardCreated";
 export {TransactionCreated} from "./TransactionCreated";
 export {TransactionFilter} from "./TransactionFilter";
 export {Transaction} from "./Transaction";
+export {MerchantType} from "./MerchantType";

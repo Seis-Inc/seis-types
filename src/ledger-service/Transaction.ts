@@ -1,3 +1,5 @@
+import {MerchantType} from "./MerchantType";
+
 export type Transaction = {
   id: string;
   amountCents: number;
@@ -19,4 +21,5 @@ export type Transaction = {
   merchantCountryCode: string | null;
   merchantAddress: string | null;
   merchantId: string | null;
+  category: MerchantType | null;
 }
