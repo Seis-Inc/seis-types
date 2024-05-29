@@ -11,7 +11,7 @@ export enum CreditCardDisputeStatus {
 export type CreditCardDispute = {
     id: string;
     transactionId: string;
-    creditCardId: string;
+    creditCardAccountId: string;
     disputeAmountCents: number;
     disputeReason: string;
     status: CreditCardDisputeStatus;
@@ -27,7 +27,7 @@ export type CreditCardDispute = {
 
 export type CreateCreditCardDisputeInput = Omit<CreditCardDispute, 'id' | 'createdAt' | 'updatedAt'>;
 
-export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'transactionId' | 'creditCardId' | 'createdAt' | 'updatedAt'>>;
+export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'transactionId' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
 
 export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'createdAt' | 'updatedAt'>>
     & {userId?: string} & ListOptions;
