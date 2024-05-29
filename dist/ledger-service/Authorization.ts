@@ -1,5 +1,6 @@
 import {AuthorizationStatus} from "./AuthorizationStatus";
 import {AuthorizationType} from "./AuthorizationType";
+import {MerchantType} from "./MerchantType";
 
 export type Authorization = {
   id: string;
@@ -23,4 +24,5 @@ export type Authorization = {
   cardId: string | null;
   network: string | null;
   originalCurrencyCode: string;
+  category: MerchantType | null;
 }
