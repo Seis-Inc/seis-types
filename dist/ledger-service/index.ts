@@ -19,5 +19,7 @@ export {EventType} from "./EventType";
 export {Event} from "./Event";
 export {MerchantType} from "./MerchantType";
 export {TransactionCreated} from "./TransactionCreated";
+export {TransactionDisputed} from "./TransactionDisputed";
 export {TransactionFilter} from "./TransactionFilter";
 export {Transaction} from "./Transaction";
+export {Dispute} from "./Dispute";

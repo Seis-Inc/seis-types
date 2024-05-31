@@ -13,5 +13,6 @@ var EventType;
     EventType["AuthorizationRequested"] = "AuthorizationRequested";
     EventType["CreditCardCreated"] = "CreditCardCreated";
     EventType["TransactionCreated"] = "TransactionCreated";
+    EventType["TransactionDisputed"] = "TransactionDisputed";
 })(EventType || (exports.EventType = EventType = {}));
 //# sourceMappingURL=EventType.js.map
