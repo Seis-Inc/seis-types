@@ -4,7 +4,7 @@ exports.CreditCardDisputeStatus = void 0;
 var CreditCardDisputeStatus;
 (function (CreditCardDisputeStatus) {
     CreditCardDisputeStatus["Pending"] = "Pending";
-    CreditCardDisputeStatus["Submitted"] = "Submitted";
+    CreditCardDisputeStatus["Created"] = "Created";
     CreditCardDisputeStatus["Denied"] = "Denied";
     CreditCardDisputeStatus["ResolvedLost"] = "ResolvedLost";
     CreditCardDisputeStatus["ResolvedWon"] = "ResolvedWon";

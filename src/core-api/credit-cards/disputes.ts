@@ -3,7 +3,7 @@ import { Page } from "../common/Page";
 
 export enum CreditCardDisputeStatus {
     Pending = 'Pending',
-    Submitted = 'Submitted',
+    Created = 'Created',
     Denied = 'Denied',
     ResolvedLost = 'ResolvedLost',
     ResolvedWon = 'ResolvedWon'
