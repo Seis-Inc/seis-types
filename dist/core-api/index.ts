@@ -57,6 +57,7 @@ export {CreditCardFilter} from './credit-cards/CreditCardFilter'
 export {CreditCardStatus} from './credit-cards/CreditCardStatus'
 export {CreditCardPage} from './credit-cards/CreditCardPage'
 export {CreditCardType} from './credit-cards/CreditCardType'
+export { CreditCardReward, CreditCardRewardInput, CreditCardRewardFilter, CreditCardRewardPage } from './credit-cards/CreditCardRewards'
 
 export {CreateFederalPrimeInterestRateInput} from './credit-cards/CreateFederalPrimeInterestRateInput'
 export {FederalPrimeInterestRate} from './credit-cards/FederalPrimeInterestRate'
