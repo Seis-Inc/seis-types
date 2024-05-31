@@ -1,5 +1,6 @@
 export type TransactionFilter = {
-  accountId: string
+  id?: string,
+  accountId?: string
   search?: string
   orderBy?: 'NewestFirst' | 'OldestFirst'
   createdAfter?: string
