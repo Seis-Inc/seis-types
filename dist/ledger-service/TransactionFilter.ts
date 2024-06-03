@@ -8,5 +8,4 @@ export type TransactionFilter = {
   offset?: number
   limit?: number
   checkForCashbackRewards?: Boolean
-  cardIds?: string[]
 }
