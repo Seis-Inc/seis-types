@@ -40,6 +40,7 @@ export type CreditCardAccount = {
 	closedAt: string | null;
 	securedAccount: Optional<CreditCardSecuredAccount>
 	hasSpentMoneyOnPhysicalCard: boolean;
+	currentHoldCents: number | 0;
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
