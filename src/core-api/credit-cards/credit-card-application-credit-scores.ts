@@ -1,3 +1,5 @@
+import { ListOptions } from "../common/ListOptions";
+import { Page } from "../common/Page";
 
 export type CreditCardApplicationCreditScore = {
     id: string;
@@ -9,7 +11,22 @@ export type CreditCardApplicationCreditScore = {
     stracCreditReportId?: string;
     hit?: boolean;
     createdAt: string;
+    updatedAt: string;
 };
 
-export type CreateCreditCardApplicationCreditScoreInput = Omit<CreditCardApplicationCreditScore, 'id' | 'createdAt'>;
+export type CreditScore = {
+    creditScore: string;
+    pulledAt: string;
+};
+
+export type CreateCreditCardApplicationCreditScoreInput = Omit<CreditCardApplicationCreditScore, 'id' | 'createdAt' | 'updatedAt'>;
 export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCardApplicationCreditScoreInput>;
+
+export type FilterCreditScoreInput = {
+    creditCardApplicationId?: string;
+    userId?: string;
+    creditScoreModel?: string;
+} & ListOptions;
+
+export type CreditScorePage = Page<CreditScore>;
+

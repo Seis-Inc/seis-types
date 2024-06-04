@@ -59,6 +59,7 @@ export {CreditCardPage} from './credit-cards/CreditCardPage'
 export {CreditCardType} from './credit-cards/CreditCardType'
 export { CreditCardReward, CreditCardRewardInput, CreditCardRewardFilter, CreditCardRewardPage } from './credit-cards/CreditCardRewards'
 
+
 export {CreateFederalPrimeInterestRateInput} from './credit-cards/CreateFederalPrimeInterestRateInput'
 export {FederalPrimeInterestRate} from './credit-cards/FederalPrimeInterestRate'
 export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './credit-cards/FederalPrimeInterestRateFilter'
@@ -67,7 +68,7 @@ export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecu
 
 export {CreditCardDisputeStatus, CreditCardDispute, CreateCreditCardDisputeInput, PatchCreditCardDisputeInput, FindCreditCardDisputeInput, CreditCardDisputePage} from './credit-cards/disputes'
 
-export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput} from './credit-cards/credit-card-application-credit-scores'
+export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput, FilterCreditScoreInput, CreditScore, CreditScorePage} from './credit-cards/credit-card-application-credit-scores'
 
 export {Address} from './addresses/Address'
 export {AddressPage} from './addresses/AddressPage'
