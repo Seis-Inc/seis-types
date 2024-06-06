@@ -73,3 +73,5 @@ export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScore
 export {Address} from './addresses/Address'
 export {AddressPage} from './addresses/AddressPage'
 export {AddressFilter} from './addresses/AddressFilter'
+
+export {CreditLimitUnderwritingDecision, CreateCreditLimitUnderwritingDecisionInput, PatchCreditLimitUnderwritingDecisionInput, FilterCreditLimitUnderwritingDecisionInput, CreditLimitUnderwritingDecisionPage} from './credit-cards/credit-limit-underwriting-decisions'
