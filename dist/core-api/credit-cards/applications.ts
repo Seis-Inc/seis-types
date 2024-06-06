@@ -7,6 +7,7 @@ export interface CreditCardApplicationFilter extends ListOptions {
   id?: string
   userId?: string
   decisionId?: string;
+  creditLimitUnderwritingDecisionId?: string;
 }
 
 export enum CreditCardApplicationProgress {
