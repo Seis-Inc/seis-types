@@ -54,6 +54,7 @@ export interface CoreCreditCardApplication {
 
   disclosuresDocumentId: Optional<string>
   aanDocumentId: Optional<string>
+  creditLimitUnderwritingDecisionId: Optional<string>
 
   bloomConsumerId: Optional<string>
 
