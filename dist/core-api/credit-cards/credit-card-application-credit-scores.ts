@@ -21,6 +21,10 @@ export type CreditScore = {
 
 export type CreateCreditCardApplicationCreditScoreInput = Omit<CreditCardApplicationCreditScore, 'id' | 'createdAt' | 'updatedAt'>;
 export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCardApplicationCreditScoreInput>;
+export type FilterCreditCardApplicationCreditScoreInput = {
+    creditCardApplicationId?: string;
+} & ListOptions;
+export type CreditCardApplicationCreditScorePage = Page<CreditCardApplicationCreditScore>;
 
 export type FilterCreditScoreInput = {
     creditCardApplicationId?: string;
