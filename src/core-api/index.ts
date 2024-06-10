@@ -68,7 +68,7 @@ export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecu
 
 export {CreditCardDisputeStatus, CreditCardDispute, CreateCreditCardDisputeInput, PatchCreditCardDisputeInput, FindCreditCardDisputeInput, CreditCardDisputePage} from './credit-cards/disputes'
 
-export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput, FilterCreditScoreInput, CreditScore, CreditScorePage} from './credit-cards/credit-card-application-credit-scores'
+export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput, FilterCreditScoreInput, CreditScore, CreditScorePage, FilterCreditCardApplicationCreditScoreInput, CreditCardApplicationCreditScorePage} from './credit-cards/credit-card-application-credit-scores'
 
 export {Address} from './addresses/Address'
 export {AddressPage} from './addresses/AddressPage'
