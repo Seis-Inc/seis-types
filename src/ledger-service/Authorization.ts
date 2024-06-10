@@ -22,6 +22,7 @@ export type Authorization = {
   merchantZip: string | null;
   merchantCountryCode: string | null;
   cardId: string | null;
+  cardLast4: string | null;
   network: string | null;
   originalCurrencyCode: string;
   category: MerchantType | null;

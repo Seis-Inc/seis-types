@@ -6,6 +6,7 @@ export type Transaction = {
   balanceOwedCents: number;
   accountId: string;
   cardId: string | null;
+  cardLast4: string | null;
   direction: 'Credit' | 'Debit';
   description: string;
   summary: string;
