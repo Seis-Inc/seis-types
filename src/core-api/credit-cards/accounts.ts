@@ -45,6 +45,7 @@ export type CreditCardAccount = {
 	currentHoldCents: number | 0;
 	paidOffAt: string | null;
 	writeOffAt: string | null;
+	isCurrent: boolean;
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
