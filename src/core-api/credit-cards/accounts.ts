@@ -5,7 +5,9 @@ import { CreditCardSecuredAccount } from "./secured-accounts";
 export enum CreditCardAccountStatus {
 	Open = 'Open',
 	Closed = 'Closed',
-	Frozen = 'Frozen'
+	Frozen = 'Frozen',
+	PaidOff = 'PaidOff',
+	WriteOff = 'WriteOff'
 }
 
 export enum CreditCardAccountScheduledPaymentAmountType {
