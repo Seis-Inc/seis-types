@@ -40,7 +40,7 @@ export type CreditCardAccountPayment = {
     updatedAt: string;
     autopay?: CreditCardAccountAutopayPayment; // @deprecated
     statement?: CreditCardAccountStatementPeriod | null;
-    isLatePayment: boolean;
+    isPaymentAppliedToOverdueBalance: boolean;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
