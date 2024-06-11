@@ -4,6 +4,8 @@ export enum CreditCardStatus {
   Stolen = 'Stolen',
   Lost = 'Lost',
   Frozen = 'Frozen',
+  FrozenByCustomer = 'FrozenByCustomer',
+  FrozenBySeis = 'FrozenBySeis',
   ClosedByCustomer = 'ClosedByCustomer',
   SuspectedFraud = 'SuspectedFraud'
 }
