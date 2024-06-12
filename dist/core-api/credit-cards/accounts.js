@@ -8,6 +8,8 @@ var CreditCardAccountStatus;
     CreditCardAccountStatus["Frozen"] = "Frozen";
     CreditCardAccountStatus["PaidOff"] = "PaidOff";
     CreditCardAccountStatus["WriteOff"] = "WriteOff";
+    CreditCardAccountStatus["ClosedByCustomer"] = "ClosedByCustomer";
+    CreditCardAccountStatus["ClosedBySeis"] = "ClosedBySeis";
 })(CreditCardAccountStatus || (exports.CreditCardAccountStatus = CreditCardAccountStatus = {}));
 var CreditCardAccountScheduledPaymentAmountType;
 (function (CreditCardAccountScheduledPaymentAmountType) {
