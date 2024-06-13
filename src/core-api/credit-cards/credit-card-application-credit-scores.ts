@@ -23,6 +23,7 @@ export type CreateCreditCardApplicationCreditScoreInput = Omit<CreditCardApplica
 export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCardApplicationCreditScoreInput>;
 export type FilterCreditCardApplicationCreditScoreInput = {
     creditCardApplicationId?: string;
+    creditScoreModel?: string;
 } & ListOptions;
 export type CreditCardApplicationCreditScorePage = Page<CreditCardApplicationCreditScore>;
 
