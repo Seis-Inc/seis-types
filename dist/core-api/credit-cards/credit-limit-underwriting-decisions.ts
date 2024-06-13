@@ -10,6 +10,7 @@ export type CreditLimitUnderwritingDecision = {
     decisionUrl: string;
     creditLimitCents: number | null;
     lineType: string | null;
+    acknowledgedAt: string | null;
     createdAt: string;
     updatedAt: string;
 }
