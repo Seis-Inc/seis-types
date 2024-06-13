@@ -21,6 +21,7 @@ export type PatchCreditLimitUnderwritingDecisionInput = Partial<Omit<CreditLimit
 export type FilterCreditLimitUnderwritingDecisionInput = {
     userId?: string;
     decisionId?: string;
+    id?: string;
 } & ListOptions
 
 export type CreditLimitUnderwritingDecisionPage = Page<CreditLimitUnderwritingDecision>;
