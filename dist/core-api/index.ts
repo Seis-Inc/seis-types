@@ -75,3 +75,6 @@ export {AddressPage} from './addresses/AddressPage'
 export {AddressFilter} from './addresses/AddressFilter'
 
 export {CreditLimitUnderwritingDecision, CreateCreditLimitUnderwritingDecisionInput, PatchCreditLimitUnderwritingDecisionInput, FilterCreditLimitUnderwritingDecisionInput, CreditLimitUnderwritingDecisionPage} from './credit-cards/credit-limit-underwriting-decisions'
+export {CreditReward} from './credit-cards/credit-rewards/CreditReward'
+export {CreditRewardInput} from './credit-cards/credit-rewards/CreditRewardInput'
+export {CreditRewardFilter} from './credit-cards/credit-rewards/CreditRewardFilter'
