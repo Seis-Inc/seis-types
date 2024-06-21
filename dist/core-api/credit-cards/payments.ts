@@ -41,6 +41,7 @@ export type CreditCardAccountPayment = {
     autopay?: CreditCardAccountAutopayPayment; // @deprecated
     statement?: CreditCardAccountStatementPeriod | null;
     isPaymentAppliedToOverdueBalance: boolean;
+    isCreditBuildingQualified: boolean;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt'>;
