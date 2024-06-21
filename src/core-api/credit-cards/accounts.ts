@@ -49,6 +49,8 @@ export type CreditCardAccount = {
 	writeOffAt: string | null;
 	isCurrent: boolean;
 	nonDueInterestAmountCents: number | null;
+	nextStatementAt: string | null;
+	nextStatementDueAt: string | null;
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
