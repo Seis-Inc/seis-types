@@ -42,6 +42,7 @@ export type CreditCardAccountPayment = {
     statement?: CreditCardAccountStatementPeriod | null;
     isPaymentAppliedToOverdueBalance: boolean;
     isCreditBuildingQualified: boolean;
+    creditRewardId: string | null;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt' | 'isCreditBuildingQualified'>;
