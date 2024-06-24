@@ -45,7 +45,7 @@ export type CreditCardAccountPayment = {
     creditRewardId: string | null;
 };
 
-export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt' | 'isCreditBuildingQualified'>;
+export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt' | 'isCreditBuildingQualified' | 'creditRewardId'>;
 export type PatchCreditCardAccountPaymentInput = Partial<Omit<CreditCardAccountPayment, 'id' | 'creditCardAccountId' | 'createdAt' | 'updatedAt' | 'ddaAccountId'>>;
 export type FindCreditCardAccountPaymentInput = FindCreditCardPaymentInput;
 export type GetCreditCardAccountPaymentInput = {    creditCardAccountId: string;
