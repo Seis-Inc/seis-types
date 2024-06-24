@@ -1,3 +1,4 @@
-import {CreditReward} from "./CreditReward";
-
-export type CreditRewardInput = CreditReward;
+export type CreditRewardInput = {
+  creditCardAccountId: string;
+  amountCents:number;
+};
