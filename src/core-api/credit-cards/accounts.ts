@@ -51,6 +51,7 @@ export type CreditCardAccount = {
 	nonDueInterestAmountCents: number | null;
 	nextStatementAt: string | null;
 	nextStatementDueAt: string | null;
+	isGracePeriodEligible: boolean;
 };
 
 export enum CreditCardAccountAutopayConfigurationStatus {
