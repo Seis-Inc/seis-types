@@ -54,4 +54,5 @@ export type FilterCreditCardAccountStatementPeriodsInput = {
     userId?: string;
     creditCardAccountId?: string;
     statusIn?: CreditCardAccountPeriodStatus[];
+    endAtBefore?: string;
 } & ListOptions;
