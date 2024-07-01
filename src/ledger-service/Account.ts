@@ -2,7 +2,7 @@ import {DateTime, Uuid} from "../general";
 
 export type Account = {
   id: Uuid;
-  balanceCents: number;
+  balanceOwedCents: number;
   availableCents: number;
   holdCents: number;
   limitCents: number;
