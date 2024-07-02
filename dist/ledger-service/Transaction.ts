@@ -23,4 +23,9 @@ export type Transaction = {
   merchantAddress: string | null;
   merchantId: string | null;
   category: MerchantType | null;
+  ecommerce: boolean;
+  cardPresent: boolean;
+  pinEntered: boolean;
+  digitalWallet: string | null;
+  paymentMethod: string | null;
 }

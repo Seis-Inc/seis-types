@@ -25,7 +25,12 @@ export type TransactionCreated = {
   merchantZip?: string | null;
   merchantCountryCode?: string | null;
   merchantMcc?: string | null;
-  cardLast4:string | null
+  cardLast4: string | null
+  ecommerce: boolean | null;
+  cardPresent: boolean | null;
+  pinEntered: boolean | null;
+  digitalWallet: string | null;
+  paymentMethod: string | null;
 }
 
 
