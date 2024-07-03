@@ -26,6 +26,7 @@ export type Transaction = {
   ecommerce: boolean;
   cardPresent: boolean;
   pinEntered: boolean;
+  recurring: boolean;
   digitalWallet: string | null;
   paymentMethod: string | null;
 }
