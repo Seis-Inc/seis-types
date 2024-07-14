@@ -24,6 +24,7 @@ export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCar
 export type FilterCreditCardApplicationCreditScoreInput = {
     creditCardApplicationId?: string;
     creditScoreModel?: string;
+    bloomOrderId?: string;
 } & ListOptions;
 export type CreditCardApplicationCreditScorePage = Page<CreditCardApplicationCreditScore>;
 
