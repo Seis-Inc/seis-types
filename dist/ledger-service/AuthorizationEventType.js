@@ -10,5 +10,6 @@ var AuthorizationEventType;
     AuthorizationEventType["AuthorizationDeclined"] = "AuthorizationDeclined";
     AuthorizationEventType["AuthorizationExpired"] = "AuthorizationExpired";
     AuthorizationEventType["AuthorizationFinalized"] = "AuthorizationFinalized";
+    AuthorizationEventType["AuthorizationRequestDeclined"] = "AuthorizationRequestDeclined";
 })(AuthorizationEventType || (exports.AuthorizationEventType = AuthorizationEventType = {}));
 //# sourceMappingURL=AuthorizationEventType.js.map
