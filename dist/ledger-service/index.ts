@@ -10,6 +10,7 @@ export {AuthorizationEvent} from "./AuthorizationEvent";
 export {AuthorizationExpired} from "./AuthorizationExpired";
 export {AuthorizationFilter} from "./AuthorizationFilter";
 export {AuthorizationRequested} from "./AuthorizationRequested";
+export {AuthorizationRequestDeclined} from "./AuthorizationRequestDeclined";
 export {AuthorizationStatus} from "./AuthorizationStatus";
 export {AuthorizationType} from "./AuthorizationType";
 export {Authorization} from "./Authorization";
