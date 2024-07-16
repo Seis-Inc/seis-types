@@ -19,5 +19,5 @@ export type AuthorizationRequestDeclined = {
   cardLast4: string | null;
   type: AuthorizationType;
   id: string;
-  reason: string;
+  declineReason: string;
 }
