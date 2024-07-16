@@ -6,6 +6,7 @@ export enum EventType {
   AuthorizationCancelationRequested = 'AuthorizationCancelationRequested',
   AuthorizationExpired = 'AuthorizationExpired',
   AuthorizationRemoved = 'AuthorizationRemoved',
+  AuthorizationRequestDeclined = 'AuthorizationRequestDeclined',
   AuthorizationRequested = 'AuthorizationRequested',
   CreditCardCreated = 'CreditCardCreated',
   TransactionCreated = 'TransactionCreated',
