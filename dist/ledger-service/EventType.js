@@ -10,6 +10,7 @@ var EventType;
     EventType["AuthorizationCancelationRequested"] = "AuthorizationCancelationRequested";
     EventType["AuthorizationExpired"] = "AuthorizationExpired";
     EventType["AuthorizationRemoved"] = "AuthorizationRemoved";
+    EventType["AuthorizationRequestDeclined"] = "AuthorizationRequestDeclined";
     EventType["AuthorizationRequested"] = "AuthorizationRequested";
     EventType["CreditCardCreated"] = "CreditCardCreated";
     EventType["TransactionCreated"] = "TransactionCreated";
