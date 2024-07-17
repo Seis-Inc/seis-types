@@ -1,5 +1,7 @@
+import { CasapDisputeReason } from "./CasapDisputeReason";
+
 export type DisputeReasonInput = {
-  casapReason: string;
+  casapReason: CasapDisputeReason;
   reason: string;
   createdAt: string;
   updatedAt: string;
