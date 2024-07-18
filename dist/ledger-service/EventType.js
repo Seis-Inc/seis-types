@@ -6,6 +6,7 @@ var EventType;
     //NounPastTenseVerb = 'NounPastTenseVerb'
     EventType["AccountCreated"] = "AccountCreated";
     EventType["AccountCreditLimitUpdated"] = "AccountCreditLimitUpdated";
+    EventType["AccountCreditLimitUpdatedV2"] = "AccountCreditLimitUpdatedV2";
     EventType["AuthorizationAmountUpdated"] = "AuthorizationAmountUpdated";
     EventType["AuthorizationCancelationRequested"] = "AuthorizationCancelationRequested";
     EventType["AuthorizationExpired"] = "AuthorizationExpired";
