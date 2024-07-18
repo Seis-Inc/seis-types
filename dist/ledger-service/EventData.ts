@@ -8,10 +8,12 @@ import {CreditCardCreated} from "./CreditCardCreated";
 import {TransactionCreated} from "./TransactionCreated";
 import { TransactionDisputed } from "./TransactionDisputed";
 import {AuthorizationRequestDeclined} from "./AuthorizationRequestDeclined";
+import {AccountCreditLimitUpdatedV2} from "./AccountCreditLimitUpdatedV2";
 
 export type EventData =
   | AccountCreated
   | AccountCreditLimitUpdated
+  | AccountCreditLimitUpdatedV2
   | AuthorizationAmountUpdated
   | AuthorizationCancelationRequested
   | AuthorizationExpired
