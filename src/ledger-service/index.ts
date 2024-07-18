@@ -1,5 +1,6 @@
 export {AccountCreated} from "./AccountCreated";
 export {AccountCreditLimitUpdated} from "./AccountCreditLimitUpdated";
+export {AccountCreditLimitUpdatedV2} from "./AccountCreditLimitUpdatedV2";
 export {Account} from "./Account";
 export {AuthorizationAmountUpdated} from "./AuthorizationAmountUpdated";
 export {AuthorizationCancelationRequested} from "./AuthorizationCancelationRequested";
