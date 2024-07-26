@@ -7,6 +7,7 @@ export type DisputeReason = {
   reason: string;
   reasonEs: string;
   firstQuestionId?: string;
+  questionnaireQuestions?: string[];
   createdAt: string;
   updatedAt: string;
 };
