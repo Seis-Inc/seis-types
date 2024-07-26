@@ -1,5 +1,6 @@
 import { Uuid } from "../../general";
 import { CasapDisputeReason } from "./CasapDisputeReason";
+import { DisputeQuestionnaireQuestion } from "./DisputeQuestionnaireQuestion";
 
 export type DisputeReason = {
   id: Uuid;
@@ -7,7 +8,7 @@ export type DisputeReason = {
   reason: string;
   reasonEs: string;
   firstQuestionId?: string;
-  questionnaireQuestions?: string[];
+  questionnaireQuestions?: DisputeQuestionnaireQuestion[];
   createdAt: string;
   updatedAt: string;
 };
