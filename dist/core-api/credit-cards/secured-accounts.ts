@@ -84,3 +84,13 @@ export type CreditCardSecuredAccountTransferJobFilter = {
 
 export type CreateCreditCardSecuredAccountTransferJobTransactionInput = Omit<CreditCardSecuredAccountTransferJobTransaction, 'id' | 'createdAt'>;
 
+export type WithdrawFundsFromSecuredAccountInput = {
+    creditCardSecuredAccountId: string;
+    amountCents: number;
+}
+
+export type DepositFundsToSecuredAccountInput = {
+    creditCardSecuredAccountId: string;
+    amountCents: number;
+}
+
