@@ -32,7 +32,7 @@ export type TransactionCreated = {
   recurring: boolean | null;
   digitalWallet: string | null;
   paymentMethod: string | null;
-  eventToken: string | null;
+  clearingEventToken: string | null;
 }
 
 
