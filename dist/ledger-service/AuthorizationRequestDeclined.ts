@@ -20,4 +20,5 @@ export type AuthorizationRequestDeclined = {
   type: AuthorizationType;
   id: string;
   declineReason: string;
+  declineDetails?: string | null;
 }
