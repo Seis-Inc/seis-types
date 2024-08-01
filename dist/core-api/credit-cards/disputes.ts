@@ -1,5 +1,7 @@
 import { ListOptions } from "../common/ListOptions";
 import { Page } from "../common/Page";
+import { DisputeAnswer } from "../disputes/DisputeAnswer";
+import { DisputeReason } from "../disputes/DisputeReason";
 
 export enum CreditCardDisputeStatus {
     Pending = 'Pending',
@@ -14,7 +16,7 @@ export type CreditCardDispute = {
     transactionId: string;
     creditCardAccountId: string;
     disputeAmountCents: number;
-    disputeReason: string;
+    disputeReasonId: string;
     status: CreditCardDisputeStatus;
     reissuedTransactionId: string | null;
     provisionalCreditTransactionId: string | null;
@@ -25,13 +27,15 @@ export type CreditCardDispute = {
     disputeRefNum: number;
     createdAt: string;
     updatedAt: string;
+    disputeReason: DisputeReason;
+    questionnaireAnswers: DisputeAnswer[];
 }
 
 export type CreateCreditCardDisputeInput = Omit<CreditCardDispute, 'id' | 'createdAt' | 'updatedAt' | 'disputeRefNum'>;
 
-export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'transactionId' | 'creditCardAccountId' | 'createdAt' | 'updatedAt'>>;
+export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'transactionId' | 'creditCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt'>>;
 
-export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'createdAt' | 'updatedAt'>>
+export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt'>>
     & {userId?: string} & ListOptions;
 
 export type CreditCardDisputePage = Page<CreditCardDispute>;
