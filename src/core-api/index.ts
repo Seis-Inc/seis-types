@@ -66,7 +66,7 @@ export {FederalPrimeInterestRateFilter, FederalPrimeInterestRatePage} from './cr
 
 export {CreditCardSecuredAccountStatus, CreditCardSecuredAccount, CreditCardSecuredAccountFilter, CreditCardSecuredAccountPage, CreateCreditCardSecuredAccountInput, PatchCreditCardSecuredAccountInput, CreditCardSecuredAccountTransaction, CreditCardSecuredAccountTransactionFilter, CreditCardSecuredAccountTransactionDirection, CreditCardSecuredAccountTransactions, CreditCardSecuredAccountTransferJob, CreateCreditCardSecuredAccountTransferJobInput, CreditCardSecuredAccountTransferJobTransaction, CreateCreditCardSecuredAccountTransferJobTransactionInput, CreditCardSecuredAccountTransferJobPage, CreditCardSecuredAccountTransferJobFilter} from './credit-cards/secured-accounts';
 
-export {CreditCardDisputeStatus, CreditCardDispute, CreateCreditCardDisputeInput, PatchCreditCardDisputeInput, FindCreditCardDisputeInput, CreditCardDisputePage} from './credit-cards/disputes'
+export {CreditCardDisputeStatus, CreditCardTransactionDisputeStatus, CreditCardDispute, CreateCreditCardDisputeInput, PatchCreditCardDisputeInput, FindCreditCardDisputeInput, CreditCardDisputePage, CreditCardDisputeTransaction, CreateCreditCardDisputeTransactionInput, PatchCreditCardDisputeTransactionInput} from './credit-cards/disputes'
 
 export {CreditCardApplicationCreditScore, CreateCreditCardApplicationCreditScoreInput, PatchCreditCardApplicationCreditScoreInput, FilterCreditScoreInput, CreditScore, CreditScorePage, FilterCreditCardApplicationCreditScoreInput, CreditCardApplicationCreditScorePage} from './credit-cards/credit-card-application-credit-scores'
 
@@ -80,15 +80,8 @@ export {CreditRewardInput} from './credit-cards/credit-rewards/CreditRewardInput
 export {CreditRewardFilter} from './credit-cards/credit-rewards/CreditRewardFilter'
 export {CasapDisputeReason} from './disputes/CasapDisputeReason'
 export {DisputeAnswer} from './disputes/DisputeAnswer'
-export {DisputeAnswerFilter} from './disputes/DisputeAnswerFilter'
-export {DisputeAnswerInput} from './disputes/DisputeAnswerInput'
-export {DisputeAnswerPage} from './disputes/DisputeAnswerPage'
-export {DisputeQuestionnaireAnswer} from './disputes/DisputeQuestionnaireAnswer'
-export {DisputeQuestionnaireQuestion} from './disputes/DisputeQuestionnaireQuestion'
-export {DisputeQuestionnaireQuestionFilter} from './disputes/DisputeQuestionnaireQuestionFilter'
-export {DisputeQuestionnaireQuestionInput} from './disputes/DisputeQuestionnaireQuestionInput'
-export {DisputeQuestionnaireQuestionPage} from './disputes/DisputeQuestionnaireQuestionPage'
 export {DisputeReason} from './disputes/DisputeReason'
 export {DisputeReasonInput} from './disputes/DisputeReasonInput'
 export {DisputeReasonPage} from './disputes/DisputeReasonPage'
 export {DisputeReasonFilter} from './disputes/DisputeReasonFilter'
+

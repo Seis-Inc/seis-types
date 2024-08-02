@@ -1,13 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreditCardDisputeStatus = void 0;
+exports.CreditCardTransactionDisputeStatus = exports.CreditCardDisputeStatus = void 0;
 var CreditCardDisputeStatus;
 (function (CreditCardDisputeStatus) {
-    CreditCardDisputeStatus["Pending"] = "Pending";
     CreditCardDisputeStatus["Created"] = "Created";
-    CreditCardDisputeStatus["Denied"] = "Denied";
-    CreditCardDisputeStatus["ResolvedLost"] = "ResolvedLost";
-    CreditCardDisputeStatus["ResolvedWon"] = "ResolvedWon";
+    CreditCardDisputeStatus["Investigating"] = "Investigating";
+    CreditCardDisputeStatus["Closed"] = "Closed";
 })(CreditCardDisputeStatus || (exports.CreditCardDisputeStatus = CreditCardDisputeStatus = {}));
 ;
+var CreditCardTransactionDisputeStatus;
+(function (CreditCardTransactionDisputeStatus) {
+    CreditCardTransactionDisputeStatus["Created"] = "Created";
+    CreditCardTransactionDisputeStatus["Pending"] = "Pending";
+    CreditCardTransactionDisputeStatus["ResolvedLost"] = "ResolvedLost";
+    CreditCardTransactionDisputeStatus["ResolvedWon"] = "ResolvedWon";
+    CreditCardTransactionDisputeStatus["Denied"] = "Denied";
+})(CreditCardTransactionDisputeStatus || (exports.CreditCardTransactionDisputeStatus = CreditCardTransactionDisputeStatus = {}));
 //# sourceMappingURL=disputes.js.map
