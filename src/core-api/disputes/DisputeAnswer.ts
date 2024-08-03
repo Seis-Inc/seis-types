@@ -1,5 +1,4 @@
-import { Dispute } from "../../ledger-service";
-import { DisputeReason } from "./DisputeReason";
+import { CreditCardDispute } from "../credit-cards/disputes";
 
 export type DisputeAnswer = {
   id: string;
@@ -9,6 +8,5 @@ export type DisputeAnswer = {
   answerEs: string;
   createdAt: string;
   updatedAt: string;
-  disputeReason?: DisputeReason;
-  dispute?: Dispute;
+  dispute?: CreditCardDispute;
 };
