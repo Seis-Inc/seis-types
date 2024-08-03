@@ -56,6 +56,16 @@ export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'disput
 
 export type CreditCardDisputePage = Page<CreditCardDispute>;
 
-export type CreateCreditCardDisputeTransactionInput = Omit<CreditCardDisputeTransaction, 'id' | 'createdAt' | 'updatedAt'>;
+export type CreateCreditCardDisputeTransactionInput = {
+    transactionId: string;
+    disputeAmountCents: number;
+};
+
+export type CreateDisputeAnswerInput = {
+    question: string;
+    questionEs: string;
+    answer: string;
+    answerEs: string;
+}
 
 export type PatchCreditCardDisputeTransactionInput = Partial<Omit<CreditCardDisputeTransaction, 'id' | 'createdAt' | 'updatedAt'>>;
