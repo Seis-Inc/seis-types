@@ -47,7 +47,12 @@ export type CreditCardDisputeTransaction = {
     updatedAt: string;
 }
 
-export type CreateCreditCardDisputeInput = Omit<CreditCardDispute, 'id' | 'createdAt' | 'updatedAt' | 'disputeRefNum' | 'transactions' | 'questionnaireAnswers'>;
+export type CreateCreditCardDisputeInput = {
+    creditCardAccountId: string;
+    disputeReasonId: string;
+    transactions: CreateCreditCardDisputeTransactionInput[];
+    questionnaireAnswers: CreateDisputeAnswerInput[];   
+};
 
 export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'creditCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
 
