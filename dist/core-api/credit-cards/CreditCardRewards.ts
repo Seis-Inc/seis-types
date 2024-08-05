@@ -14,6 +14,7 @@ export type CreditCardReward = {
 
 export type CreditCardRewardInput = {
 	userId: string;
+	isEmployee: boolean;
 	type: string;
 	creditCardAccountId: string;
 	creditCardTransactionId: string;
