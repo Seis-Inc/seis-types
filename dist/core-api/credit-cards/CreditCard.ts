@@ -22,6 +22,7 @@ export type CreditCard = {
   createdAt: string;
   updatedAt: string;
   shippedAt: string | null;
+  estimatedDeliveredToHomeAt: string | null;
   lithicShippingMethod: string | null;
   trackingNumber: string | null;
 };
