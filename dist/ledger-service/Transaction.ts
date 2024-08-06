@@ -29,4 +29,5 @@ export type Transaction = {
   recurring: boolean;
   digitalWallet: string | null;
   paymentMethod: string | null;
+  authorizationId: string | null;
 }
