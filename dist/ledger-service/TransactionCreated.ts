@@ -33,7 +33,7 @@ export type TransactionCreated = {
   digitalWallet: string | null;
   paymentMethod: string | null;
   clearingEventToken: string | null;
-  acquiererReferenceNumber: string | null;
+  acquirerReferenceNumber: string | null;
 }
 
 
