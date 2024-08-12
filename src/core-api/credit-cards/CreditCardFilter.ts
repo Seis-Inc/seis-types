@@ -8,7 +8,7 @@ export type CreditCardFilter = {
     token?: string,
     creditCardAccountId?: string,
     cardType?: CreditCardType,
-    estimatedDeliveredToHomeAtIsSet?: true,
+    estimatedDeliveredToHomeAtIsSet?: false,
     shippingMethod?: CreditCardShippingStatus,
     hasShippedWithinLastMonth?: true,
     lithicStateNotIn?: CreditCardLithicState[]
