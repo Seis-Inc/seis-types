@@ -30,5 +30,5 @@ export type Transaction = {
   digitalWallet: string | null;
   paymentMethod: string | null;
   authorizationId: string | null;
-  acquiererReferenceNumber: string | null;
+  acquirerReferenceNumber: string | null;
 }
