@@ -1,14 +1,16 @@
 import {ListOptions} from "../common/ListOptions";
 import {CreditCardType} from "./CreditCardType";
 import {CreditCardShippingStatus} from "./CreditCardShippingStatus";
+import {CreditCardLithicState} from "./CreditCardLithicState";
 
 export type CreditCardFilter = {
     userId?: string,
     token?: string,
     creditCardAccountId?: string,
     cardType?: CreditCardType,
-    estimatedDeliveredToHomeAtIsSet?: boolean,
+    estimatedDeliveredToHomeAtIsSet?: true,
     shippingMethod?: CreditCardShippingStatus,
-    isNotClosedAndHasShippedWithinLastMonth?: boolean
+    hasShippedWithinLastMonth?: true,
+    lithicStateNotIn?: CreditCardLithicState[]
 } & ListOptions;
 
