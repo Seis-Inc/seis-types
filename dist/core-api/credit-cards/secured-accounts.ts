@@ -92,10 +92,16 @@ export type CreateCreditCardSecuredAccountTransferJobTransactionInput = Omit<Cre
 export type WithdrawFundsFromSecuredAccountInput = {
     creditCardSecuredAccountId: string;
     amountCents: number;
+    createdAt?: string;
+    source: string;
+    sourceId: string;
 }
 
 export type DepositFundsToSecuredAccountInput = {
     creditCardSecuredAccountId: string;
     amountCents: number;
+    createdAt?: string;
+    source: string;
+    sourceId: string;
 }
 
