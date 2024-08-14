@@ -28,6 +28,7 @@ export type CreditCardRewardInput = {
 	creditCardTransactionId: string;
 	transactionAmountCents: number;
 	rewardLimitCents: number;
+	createdAt: string | null;
 	createdBefore: string;
 	createdAfter: string;
 };
