@@ -33,8 +33,8 @@ export type CreditCardAccountPayment = {
     creditCardAccountStatementId: string | null;
     status: CreditCardPaymentStatus;
     amountCents: number;
-    bookPaymentId: string | null;
-    ddaAccountId: string | null;
+    bookPaymentId: string | null; // @deprecated
+    ddaAccountId: string | null; // @deprecated
     paidAt: string | null;
     createdAt: string;
     updatedAt: string;
@@ -43,6 +43,8 @@ export type CreditCardAccountPayment = {
     isPaymentAppliedToOverdueBalance: boolean;
     isCreditBuildingQualified: boolean;
     creditRewardId: string | null;
+    source: string | null;
+    sourceId: string | null;
 };
 
 export type CreateCreditCardAccountPaymentInput = Omit<CreditCardAccountPayment, 'id' | 'createdAt' | 'updatedAt' | 'isCreditBuildingQualified' | 'creditRewardId'>;

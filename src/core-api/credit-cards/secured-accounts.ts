@@ -40,7 +40,12 @@ export type CreditCardSecuredAccountTransaction = {
 	createdAt: string;
 	direction: CreditCardSecuredAccountTransactionDirection;
 	amountCents: number;
+    balanceCents: number;
+    source: string;
+    sourceId: string;
 };
+
+export type CreateCreditCardSecuredAccountTransactionInput = Omit<CreditCardSecuredAccountTransaction, 'id' | 'createdAt'>;
 
 export type CreditCardSecuredAccountFilter = {
     id?: string;
