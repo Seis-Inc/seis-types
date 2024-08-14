@@ -9,7 +9,15 @@ export type CreditCardReward = {
 	creditCardTransactionId: string;
 	rewardAmountCents: number;
 	createdAt: string;
-	updatedAt?: string | null;
+	updatedAt: string | null;
+	paidAt: string | null;
+	unitTransactionId: string | null;
+};
+
+export type CreditCardRewardPatch = {
+	id: string;
+	paidAt: string | null;
+	unitTransactionId: string | null;
 };
 
 export type CreditCardRewardInput = {
