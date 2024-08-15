@@ -97,8 +97,8 @@ export type WithdrawFundsFromSecuredAccountInput = {
     creditCardSecuredAccountId: string;
     amountCents: number;
     createdAt?: string;
-    source: string;
-    sourceId: string;
+    source?: string;
+    sourceId?: string;
 }
 
 export type DepositFundsToSecuredAccountInput = {
