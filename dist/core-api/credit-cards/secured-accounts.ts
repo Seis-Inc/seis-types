@@ -27,7 +27,7 @@ export type CreditCardSecuredAccountTransactionFilter = {
     creditCardSecuredAccountId?: string;
     fromDate?: string;
     toDate?: string;
-}
+} & ListOptions
 
 export enum CreditCardSecuredAccountTransactionDirection {
 	Debit = 'Debit',
