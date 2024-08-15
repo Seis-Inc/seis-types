@@ -48,7 +48,7 @@ export type CreditCardSecuredAccountTransaction = {
 
 export type CreditCardSecuredAccountTransactionPage = Page<CreditCardSecuredAccountTransaction>;
 
-export type CreateCreditCardSecuredAccountTransactionInput = Omit<CreditCardSecuredAccountTransaction, 'id' | 'createdAt'>;
+export type CreateCreditCardSecuredAccountTransactionInput = Omit<CreditCardSecuredAccountTransaction, 'createdAt'>;
 
 export type CreditCardSecuredAccountFilter = {
     id?: string;
