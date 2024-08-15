@@ -43,6 +43,7 @@ export type CreditCardSecuredAccountTransaction = {
     balanceCents: number;
     source: string;
     sourceId: string;
+    securedAccount?: CreditCardSecuredAccount;
 };
 
 export type CreateCreditCardSecuredAccountTransactionInput = Omit<CreditCardSecuredAccountTransaction, 'id' | 'createdAt'>;
