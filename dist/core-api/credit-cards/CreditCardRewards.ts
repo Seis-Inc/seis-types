@@ -38,6 +38,7 @@ export type CreditCardRewardFilter = {
 	type?: string;
 	createdBefore?: string;
 	createdAfter?: string;
+	paidAtIsNull?:true;
 } & ListOptions;
 
 export type CreditCardRewardPage = Page<CreditCardReward>;
