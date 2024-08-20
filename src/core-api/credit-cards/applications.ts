@@ -4,12 +4,14 @@ import { Page } from '../common/Page'
 import { CreditCardApplicationCreditScore } from './credit-card-application-credit-scores'
 
 export interface CreditCardApplicationFilter extends ListOptions {
-  id?: string
-  userId?: string
+  id?: string;
+  userId?: string;
   decisionId?: string;
   creditLimitUnderwritingDecisionId?: string;
   bloomConsumerId?: string;
   includes?: string[];
+  status?: CreditCardApplicationStatus;
+  userName?: string;
 }
 
 export enum CreditCardApplicationProgress {
