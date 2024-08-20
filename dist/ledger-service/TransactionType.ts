@@ -1,0 +1,1 @@
+export type TransactionType = 'Payment' | 'Interest' | 'CardTransaction' | 'Fee' | 'Adjustment' | 'WriteOff'

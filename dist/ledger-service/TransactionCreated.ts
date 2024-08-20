@@ -1,4 +1,4 @@
-type TransactionType = 'Payment' | 'Interest' | 'CardTransaction' | 'Fee' | 'Adjustment' | 'WriteOff'
+import {TransactionType} from "./TransactionType";
 
 export type TransactionCreated = {
   id: string,
