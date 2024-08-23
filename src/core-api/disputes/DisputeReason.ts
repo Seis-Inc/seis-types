@@ -8,5 +8,5 @@ export type DisputeReason = {
   reasonEs: string;
   createdAt: string;
   updatedAt: string;
-  type: ("Credit"|"Debit")[]
+  types: ("Credit"|"Debit")[]
 };
