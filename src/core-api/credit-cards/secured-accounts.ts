@@ -27,7 +27,8 @@ export type CreditCardSecuredAccountTransactionFilter = {
     creditCardSecuredAccountId?: string;
     fromDate?: string;
     toDate?: string;
-}
+    source?: string;
+} & ListOptions
 
 export enum CreditCardSecuredAccountTransactionDirection {
 	Debit = 'Debit',
@@ -40,7 +41,15 @@ export type CreditCardSecuredAccountTransaction = {
 	createdAt: string;
 	direction: CreditCardSecuredAccountTransactionDirection;
 	amountCents: number;
+    balanceCents: number;
+    source: string;
+    sourceId: string;
+    securedAccount?: CreditCardSecuredAccount;
 };
+
+export type CreditCardSecuredAccountTransactionPage = Page<CreditCardSecuredAccountTransaction>;
+
+export type CreateCreditCardSecuredAccountTransactionInput = Omit<CreditCardSecuredAccountTransaction, 'createdAt'>;
 
 export type CreditCardSecuredAccountFilter = {
     id?: string;
@@ -85,12 +94,21 @@ export type CreditCardSecuredAccountTransferJobFilter = {
 export type CreateCreditCardSecuredAccountTransferJobTransactionInput = Omit<CreditCardSecuredAccountTransferJobTransaction, 'id' | 'createdAt'>;
 
 export type WithdrawFundsFromSecuredAccountInput = {
+    creditCardSecuredAccountTransactionId: string;
     creditCardSecuredAccountId: string;
     amountCents: number;
+    createdAt?: string;
+    source?: string;
+    sourceId?: string;
+    closingAccount?: boolean;
 }
 
 export type DepositFundsToSecuredAccountInput = {
+    creditCardSecuredAccountTransactionId: string;
     creditCardSecuredAccountId: string;
     amountCents: number;
+    createdAt?: string;
+    source: string;
+    sourceId: string;
 }
 
