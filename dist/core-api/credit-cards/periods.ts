@@ -32,7 +32,8 @@ export type CreditCardAccountStatementPeriod = {
     minimumPaymentCents: number;
     paidAt: string | null;
     securedAccountFinalBalanceCents: number;
-    payments: CreditCardAccountPayment[]
+    payments: CreditCardAccountPayment[];
+    peachStatementId: string | null;
     createdAt: Date;
     updatedAt: Date;
 };
