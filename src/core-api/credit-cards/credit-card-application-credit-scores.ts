@@ -25,6 +25,7 @@ export type FilterCreditCardApplicationCreditScoreInput = {
     creditCardApplicationId?: string;
     creditScoreModel?: string;
     bloomOrderId?: string;
+    bloomConsumerId?: string;
 } & ListOptions;
 export type CreditCardApplicationCreditScorePage = Page<CreditCardApplicationCreditScore>;
 
@@ -33,6 +34,7 @@ export type FilterCreditScoreInput = {
     userId?: string;
     creditScoreModel?: string;
     bloomOrderId?: string;
+    bloomConsumerId?: string;
 } & ListOptions;
 
 export type CreditScorePage = Page<CreditScore>;
