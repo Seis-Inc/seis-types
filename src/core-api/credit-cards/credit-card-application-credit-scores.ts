@@ -20,7 +20,7 @@ export type CreditScore = {
 };
 
 export type CreateCreditCardApplicationCreditScoreInput = Omit<CreditCardApplicationCreditScore, 'id' | 'createdAt' | 'updatedAt'>;
-export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCardApplicationCreditScoreInput>;
+export type PatchCreditCardApplicationCreditScoreInput = Partial<CreateCreditCardApplicationCreditScoreInput> & { createdAt?: string };
 export type FilterCreditCardApplicationCreditScoreInput = {
     creditCardApplicationId?: string;
     creditScoreModel?: string;
