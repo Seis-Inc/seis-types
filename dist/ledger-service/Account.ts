@@ -1,4 +1,4 @@
-import {DateTime, Uuid} from "../general";
+import { DateTime, Uuid } from "../general";
 
 export type Account = {
   id: Uuid;
@@ -10,4 +10,5 @@ export type Account = {
   externalId: string;
   eventId: string;
   createdAt: DateTime;
-}
+  maxBalanceOwedCents?: number;
+};
