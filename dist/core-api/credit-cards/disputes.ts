@@ -51,7 +51,6 @@ export type CreditCardDisputeTransaction = {
 export type CreateCreditCardDisputeInput = {
     creditCardAccountId: string;
     disputeReasonId: string;
-    casapDisputeId: string;
     transactions: CreateCreditCardDisputeTransactionInput[];
     questionnaireAnswers: CreateDisputeAnswerInput[];   
 };
@@ -61,7 +60,7 @@ export type UpdateCreditCardDisputeInput = {
     status: CreditCardDisputeStatus;
 };
 
-export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'creditCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions' | 'casapDisputeId'>>;
+export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'creditCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
 
 export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>
     & {userId?: string} & ListOptions;
