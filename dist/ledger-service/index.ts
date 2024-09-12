@@ -26,3 +26,4 @@ export {TransactionFilter} from "./TransactionFilter";
 export {Transaction} from "./Transaction";
 export {Dispute} from "./Dispute";
 export {AccountOutstandingInterestUpdated} from "./AccountOutstandingInterestUpdated";
+export {AccountInclude} from "./AccountInclude";
