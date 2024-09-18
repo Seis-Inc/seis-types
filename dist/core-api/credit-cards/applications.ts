@@ -68,4 +68,8 @@ export interface CoreCreditCardApplication {
   creditScores: Optional<CreditCardApplicationCreditScore[]>
 
   secureFundsBeforeOrder: boolean
+
+  userIpAddress: Optional<string>
+
+  userAgent: Optional<string>
 }
