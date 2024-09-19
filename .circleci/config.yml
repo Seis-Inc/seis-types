@@ -1,0 +1,38 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:18.18
+    steps:
+      - checkout
+      - restore_cache:
+          key: node-modules-cache-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - run: yarn build
+      - save_cache:
+          key: node-modules-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+  publish:
+    machine:
+      image: default
+    steps:
+      - checkout
+      - run:
+          name: publish tag to github
+          command: |
+            yarn config set version-git-message "v%s [ci skip]"
+            yarn version --patch
+workflows:
+  build_and_publish:
+    jobs:
+      - build
+      - publish:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+
