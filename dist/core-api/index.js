@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CasapDisputeReason = exports.CreditCardTransactionDisputeStatus = exports.CreditCardDisputeStatus = exports.CreditCardSecuredAccountTransactionDirection = exports.CreditCardSecuredAccountStatus = exports.CreditCardShippingStatus = exports.CreditCardType = exports.CreditCardStatus = exports.CreditCardLithicState = exports.CreditCardApplicationStatus = exports.CreditCardApplicationProgress = exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
+exports.DisputeType = exports.CasapDisputeEventType = exports.CasapDisputeReason = exports.CreditCardTransactionDisputeStatus = exports.CreditCardDisputeStatus = exports.CreditCardSecuredAccountTransactionDirection = exports.CreditCardSecuredAccountStatus = exports.CreditCardShippingStatus = exports.CreditCardType = exports.CreditCardStatus = exports.CreditCardLithicState = exports.CreditCardApplicationStatus = exports.CreditCardApplicationProgress = exports.CreditCardAccountPeriodStatus = exports.CreditCardAccountAutopayPaymentStatus = exports.CreditCardPaymentStatus = exports.CreditCardAccountAutopayPayoffAmountType = exports.CreditCardAccountAutopayInterval = exports.CreditCardAccountAutopayConfigurationStatus = exports.CreditCardAccountScheduledPaymentType = exports.CreditCardAccountScheduledPaymentAmountType = exports.CreditCardAccountStatus = exports.NetworkUserOptions = exports.NetworkPaymentStatus = void 0;
 var NetworkPaymentStatus_1 = require("./networkPayments/NetworkPaymentStatus");
 Object.defineProperty(exports, "NetworkPaymentStatus", { enumerable: true, get: function () { return NetworkPaymentStatus_1.NetworkPaymentStatus; } });
 var NetworkUserOptions_1 = require("./networkPayments/NetworkUserOptions");
@@ -36,4 +36,7 @@ Object.defineProperty(exports, "CreditCardDisputeStatus", { enumerable: true, ge
 Object.defineProperty(exports, "CreditCardTransactionDisputeStatus", { enumerable: true, get: function () { return disputes_1.CreditCardTransactionDisputeStatus; } });
 var CasapDisputeReason_1 = require("./disputes/CasapDisputeReason");
 Object.defineProperty(exports, "CasapDisputeReason", { enumerable: true, get: function () { return CasapDisputeReason_1.CasapDisputeReason; } });
+var DisputeEvent_1 = require("./dispute-event/DisputeEvent");
+Object.defineProperty(exports, "CasapDisputeEventType", { enumerable: true, get: function () { return DisputeEvent_1.CasapDisputeEventType; } });
+Object.defineProperty(exports, "DisputeType", { enumerable: true, get: function () { return DisputeEvent_1.DisputeType; } });
 //# sourceMappingURL=index.js.map
