@@ -11,6 +11,8 @@ export type CreditCardApplicationDocument = {
     uploadedToLeadAt: string | null
     createdAt: string
     updatedAt: string
+    consentUserIpAddress?: string
+    consentUserAgent?: string
   }
 
   export type CreditCardApplicationDocumentInput = {
@@ -20,6 +22,8 @@ export type CreditCardApplicationDocument = {
     creditCardApplicationId: string
     uploadedToLeadAt?: string
     acceptedAt?: string
+    consentUserIpAddress?: string
+    consentUserAgent?: string
   }
 
   export type CreditCardApplicationDocumentFilter = {
