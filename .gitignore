@@ -1,4 +1,5 @@
 **/\.*
 !.gitignore
 !.npmignore
+!.circleci
 node_modules
