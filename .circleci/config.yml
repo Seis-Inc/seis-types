@@ -21,7 +21,7 @@ jobs:
       - checkout
       - run:
           name: publish tag to github
-          command: yarn version --patch
+          command: yarn version --patch -m "Bumped version number to %s [ci skip]"
 workflows:
   build_and_publish:
     jobs:
