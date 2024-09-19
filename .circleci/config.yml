@@ -21,7 +21,7 @@ jobs:
       - checkout
       - run:
           name: publish tag to github
-          command: yarn version
+          command: yarn version --patch
 workflows:
   build_and_publish:
     jobs:
