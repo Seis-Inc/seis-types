@@ -63,7 +63,7 @@ export type UpdateCreditCardDisputeInput = {
 export type PatchCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'id' | 'creditCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
 
 export type FindCreditCardDisputeInput = Partial<Omit<CreditCardDispute, 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>
-    & {userId?: string} & ListOptions;
+    & {userId?: string, statusIn?: CreditCardDisputeStatus[]} & ListOptions;
 
 export type CreditCardDisputePage = Page<CreditCardDispute>;
 
