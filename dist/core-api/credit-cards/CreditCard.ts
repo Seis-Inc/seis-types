@@ -25,6 +25,8 @@ export type CreditCard = {
   estimatedDeliveredToHomeAt: string | null;
   lithicShippingMethod: string | null;
   trackingNumber: string | null;
+  hasAddedToAppleWallet: boolean;
+  hasAddedToGoogleWallet: boolean;
 };
 
 
