@@ -12,6 +12,7 @@
     "postinstall": "rm -rf ../../node_modules/seis-types/src/",
     "build": "./node_modules/typescript/bin/tsc && cp -R src/ledger-service dist/ && cp -R src/core-api dist/",
     "createVersion": "git tag $(npm run version --silent) && git push --tags",
+    "version": "echo $npm_package_version",
     "publish": "wrap() { yarn build && git commit -am \"creating new version\" && git push origin master && git tag $@ && git push origin $@; }; wrap",
     "postversion": "git push --tags && git push && echo \"Successfully released version $npm_package_version!\""
   },
