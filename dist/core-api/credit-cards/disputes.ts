@@ -52,7 +52,8 @@ export type CreateCreditCardDisputeInput = {
     creditCardAccountId: string;
     disputeReasonId: string;
     transactions: CreateCreditCardDisputeTransactionInput[];
-    questionnaireAnswers: CreateDisputeAnswerInput[];   
+    questionnaireAnswers: CreateDisputeAnswerInput[];
+    casapDisputeId?: string;
 };
 
 export type UpdateCreditCardDisputeInput = {
