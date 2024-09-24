@@ -25,6 +25,7 @@ export type CreditCardDispute = {
     disputeRefNum: number;
     casapDisputeId: string | null;
     closedAt: string | null
+    disputedAt: string;
     createdAt: string;
     updatedAt: string;
     disputeReason: DisputeReason;
