@@ -17,6 +17,7 @@ export type AuthorizationRequested = {
   originalCurrencyCode: string | 'USD';
   accountId: string | null;
   cardLast4: string | null;
+  digitalWallet: string | null;
   type: AuthorizationType;
   id: string;
 }
