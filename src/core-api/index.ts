@@ -86,7 +86,7 @@ export {DisputeReasonInput} from './disputes/DisputeReasonInput'
 export {DisputeReasonPage} from './disputes/DisputeReasonPage'
 export {DisputeReasonFilter} from './disputes/DisputeReasonFilter'
 
-export {DisputeEvent, CreateDisputeEventInput, UpdateDisputeEventInput, FilterDisputeEventsInput, DisputeEventPage, CasapDisputeEventType, DisputeType} from './dispute-event/DisputeEvent'
+export {DisputeEvent, CreateDisputeEventInput, UpdateDisputeEventInput, FilterDisputeEventsInput, DisputeEventPage, CasapDisputeEventType, CasapDisputeTransactionEventType, DisputeType} from './dispute-event/DisputeEvent'
 
 export {
   DebitCardDisputeStatus,
