@@ -44,7 +44,7 @@ export type DisputeEvent = {
     disputedTransactionId?: string;
     disputeType: DisputeType;
     eventDate: number;
-    eventType: CasapDisputeEventType & CasapDisputeTransactionEventType;
+    eventType: CasapDisputeEventType | CasapDisputeTransactionEventType;
     eventData?: {[key: string]: any};
     agentEmail: string;
     createdAt: string;
