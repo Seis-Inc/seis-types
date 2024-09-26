@@ -1,7 +1,7 @@
 import { ListOptions } from "../common/ListOptions";
 import { Page } from "../common/Page";
-import { DisputeAnswer } from "../disputes/DisputeAnswer";
-import { DisputeReason } from "../disputes/DisputeReason";
+import { DisputeAnswer } from "./DisputeAnswer";
+import { DisputeReason } from "./DisputeReason";
 
 export enum DebitCardDisputeStatus {
     Created = 'Created',
