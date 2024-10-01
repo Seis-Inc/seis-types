@@ -40,10 +40,10 @@ export type DebitCardDisputeTransaction = {
     disputeAmountCents: number;
     status: DebitCardTransactionDisputeStatus;
     reissuedTransactionId: string | null;
-    provisionalDebitTransactionId: string | null;
-    provisionalDebitIssuedAt: string | null;
-    provisionalDebitReversalTransactionId: string | null;
-    provisionalDebitReversalIssuedAt: string | null;
+    provisionalCreditTransactionId: string | null;
+    provisionalCreditIssuedAt: string | null;
+    provisionalCreditReversalTransactionId: string | null;
+    provisionalCreditReversalIssuedAt: string | null;
     resolvedAt: string | null;
     createdAt: string;
     updatedAt: string;
