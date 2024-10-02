@@ -31,8 +31,8 @@ export type CreateCreditCardSecuredAccountInput = Omit<CreditCardSecuredAccount,
 export type PatchCreditCardSecuredAccountInput = Partial<CreateCreditCardSecuredAccountInput>;
 
 export type GetCreditCardSecuredAccountSnapshotInput = {
-    id: string;
-    snapshotAt: string;
+    fromDate: string;
+    toDate: string;
 };
 
 
