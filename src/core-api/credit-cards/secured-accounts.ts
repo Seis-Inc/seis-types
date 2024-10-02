@@ -19,8 +19,21 @@ export type CreditCardSecuredAccount = {
     updatedAt: string;
 };
 
+export type CreditCardSecuredAccountSnapshot = {
+    id: string;
+    creditCardAccountId: string;
+    accountNumber: string;
+    balanceCents: number;
+    snapshotAt: string;
+}
+
 export type CreateCreditCardSecuredAccountInput = Omit<CreditCardSecuredAccount, 'id' | 'accountNumber' |'createdAt' | 'updatedAt'>;
 export type PatchCreditCardSecuredAccountInput = Partial<CreateCreditCardSecuredAccountInput>;
+
+export type GetCreditCardSecuredAccountSnapshotInput = {
+    id: string;
+    snapshotAt: string;
+};
 
 
 export type CreditCardSecuredAccountTransactionFilter = {
