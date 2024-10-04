@@ -82,6 +82,7 @@ export type CreditCardAccountAutopayConfiguration = {
 	payoffAmountType: CreditCardAccountAutopayPayoffAmountType;
 	autopayInterval: CreditCardAccountAutopayInterval;
 	autopayCronDefinition: string | null;
+	payWithSecuredFunds: boolean | null;
 	createdAt: Date;
 	updatedAt: Date;
 }
