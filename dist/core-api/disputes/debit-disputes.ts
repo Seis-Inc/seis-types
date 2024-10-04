@@ -39,8 +39,6 @@ export type DebitCardDisputeTransaction = {
     transactionId: string;
     disputeAmountCents: number;
     status: DebitCardTransactionDisputeStatus;
-    casapDisputeId: string | null;
-    unitDisputeId: string | null;
     reissuedTransactionId: string | null;
     provisionalCreditTransactionId: string | null;
     provisionalCreditIssuedAt: string | null;
@@ -65,9 +63,9 @@ export type UpdateDebitCardDisputeInput = {
     status: DebitCardDisputeStatus;
 };
 
-export type PatchDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'id' | 'debitCardAccountId' | 'disputeReason' | 'questionnaireAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
+export type PatchDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'id' | 'debitCardAccountId' | 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
 
-export type FindDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'disputeReason' | 'questionnaireAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>
+export type FindDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'disputeReason' | 'questionairreAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>
     & {userId?: string, statusIn?: DebitCardDisputeStatus[]} & ListOptions;
 
 export type DebitCardDisputePage = Page<DebitCardDispute>;
