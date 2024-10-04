@@ -39,6 +39,8 @@ export type DebitCardDisputeTransaction = {
     transactionId: string;
     disputeAmountCents: number;
     status: DebitCardTransactionDisputeStatus;
+    casapDisputeId: string | null;
+    unitDisputeId: string | null;
     reissuedTransactionId: string | null;
     provisionalCreditTransactionId: string | null;
     provisionalCreditIssuedAt: string | null;
