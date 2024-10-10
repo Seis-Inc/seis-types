@@ -15,5 +15,6 @@ var DebitCardTransactionDisputeStatus;
     DebitCardTransactionDisputeStatus["ResolvedLost"] = "ResolvedLost";
     DebitCardTransactionDisputeStatus["ResolvedWon"] = "ResolvedWon";
     DebitCardTransactionDisputeStatus["Denied"] = "Denied";
+    DebitCardTransactionDisputeStatus["Canceled"] = "Canceled";
 })(DebitCardTransactionDisputeStatus || (exports.DebitCardTransactionDisputeStatus = DebitCardTransactionDisputeStatus = {}));
 //# sourceMappingURL=debit-disputes.js.map
