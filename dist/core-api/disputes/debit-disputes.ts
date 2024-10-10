@@ -14,8 +14,7 @@ export enum DebitCardTransactionDisputeStatus {
     Pending = 'Pending',
     ResolvedLost = 'ResolvedLost',
     ResolvedWon = 'ResolvedWon',
-    Denied = 'Denied',
-    Canceled = 'Canceled'
+    Denied = 'Denied'
 }
 
 export type DebitCardDispute = {

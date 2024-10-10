@@ -15,5 +15,6 @@ var CreditCardTransactionDisputeStatus;
     CreditCardTransactionDisputeStatus["ResolvedLost"] = "ResolvedLost";
     CreditCardTransactionDisputeStatus["ResolvedWon"] = "ResolvedWon";
     CreditCardTransactionDisputeStatus["Denied"] = "Denied";
+    CreditCardTransactionDisputeStatus["Canceled"] = "Canceled";
 })(CreditCardTransactionDisputeStatus || (exports.CreditCardTransactionDisputeStatus = CreditCardTransactionDisputeStatus = {}));
 //# sourceMappingURL=disputes.js.map
