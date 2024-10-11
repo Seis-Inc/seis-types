@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DebitCardTransactionDisputeStatus = exports.DebitCardDisputeStatus = void 0;
+exports.DisputeOrderBy = exports.DebitCardTransactionDisputeStatus = exports.DebitCardDisputeStatus = void 0;
 var DebitCardDisputeStatus;
 (function (DebitCardDisputeStatus) {
     DebitCardDisputeStatus["Created"] = "Created";
@@ -17,4 +17,9 @@ var DebitCardTransactionDisputeStatus;
     DebitCardTransactionDisputeStatus["Denied"] = "Denied";
     DebitCardTransactionDisputeStatus["Canceled"] = "Canceled";
 })(DebitCardTransactionDisputeStatus || (exports.DebitCardTransactionDisputeStatus = DebitCardTransactionDisputeStatus = {}));
+var DisputeOrderBy;
+(function (DisputeOrderBy) {
+    DisputeOrderBy["NewestFirst"] = "NewestFirst";
+    DisputeOrderBy["OldestFirst"] = "OldestFirst";
+})(DisputeOrderBy || (exports.DisputeOrderBy = DisputeOrderBy = {}));
 //# sourceMappingURL=debit-disputes.js.map
