@@ -68,8 +68,13 @@ export type UpdateDebitCardDisputeInput = {
 
 export type PatchDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'id' | 'debitCardAccountId' | 'disputeReason' | 'questionnaireAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>;
 
+export enum DisputeOrderBy {
+    NewestFirst = 'NewestFirst',
+    OldestFirst = 'OldestFirst'
+}
+
 export type FindDebitCardDisputeInput = Partial<Omit<DebitCardDispute, 'disputeReason' | 'questionnaireAnswers' | 'createdAt' | 'updatedAt' | 'transactions'>>
-    & {userId?: string, statusIn?: DebitCardDisputeStatus[]} & ListOptions;
+    & {userId?: string, statusIn?: DebitCardDisputeStatus[], orderBy?: DisputeOrderBy} & ListOptions;
 
 export type DebitCardDisputePage = Page<DebitCardDispute>;
 
