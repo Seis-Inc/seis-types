@@ -34,10 +34,48 @@ export type DebitCardDispute = {
     transactions: DebitCardDisputeTransaction[];
 }
 
+// This is almost the same as CoreTransaction. This is a hack because we have not included CoreTransaction in seis-types
+type TransactionSummary = {
+    id: string;
+    type: string;
+    corrId: string;
+    accountId: string;
+    createdAt: string;
+    direction: string;
+    amount: number;
+    balance: number;
+    summary: string;
+    description: string;
+    cardLast4Digits?: string;
+    merchantName?: string;
+    merchantType?: string;
+    merchantCategory?: string;
+    merchantLocation?: string;
+    coordLongitude?: number;
+    coordLatitude?: number;
+    recurring?: boolean;
+    secCode?: string;
+    digitalWallet?: string;
+    cardPresent?: boolean;
+    paymentMethod?: string;
+    cardNetwork?: string;
+    ecommerce?: boolean;
+    dispute?: any;
+    cardId?: string;
+    source?: string;
+    sourceId?: string;
+    groupId?: string;
+    reversed: boolean;
+    isEditable?: boolean;
+    didQualifyForCashback?: boolean;
+    networkTransactionId?: string;
+}
+
 export type DebitCardDisputeTransaction = {
     id: string;
     debitCardDisputeId: string;
     transactionId: string;
+    transaction: TransactionSummary;
     disputeAmountCents: number;
     status: DebitCardTransactionDisputeStatus;
     casapDisputeId: string | null;
