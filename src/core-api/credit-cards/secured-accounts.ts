@@ -114,6 +114,7 @@ export type WithdrawFundsFromSecuredAccountInput = {
     source?: string;
     sourceId?: string;
     closingAccount?: boolean;
+    payingWithSecuredFunds?: boolean;
 }
 
 export type DepositFundsToSecuredAccountInput = {
