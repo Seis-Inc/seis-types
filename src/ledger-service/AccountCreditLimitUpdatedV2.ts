@@ -4,4 +4,5 @@ export type AccountCreditLimitUpdatedV2 = {
   securedAmountCents: number;
   unsecuredAmountCents: number;
   paymentId: string | null;
+  forced?: boolean | null;
 }
