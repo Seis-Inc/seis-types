@@ -1,7 +1,16 @@
 export enum CasapDisputeReason {
   "DisputeReasonUnAuth" = "DISPUTE_REASON_UNAUTH",
+  /**
+    @deprecated
+   */
   "DisputeReasonMerchantIssue" = "DISPUTE_REASON_MERCHANT_ISSUE",
+  /**
+    @deprecated
+  */
   "DisputeReasonATMIssue" = "DISPUTE_REASON_ATM_ISSUE",
+  /**
+    @deprecated
+   */
   "DisputeReasonACHIssue" = "DISPUTE_REASON_ACH_ISSUE",
   "DisputeReasonTransferIssue" = "DISPUTE_REASON_TRANSFER_ISSUE",
   "DisputeReasonATMIssueCashNotDispensed" = "DISPUTE_REASON_ATM_ISSUE_CASH_NOT_DISPENSED",
