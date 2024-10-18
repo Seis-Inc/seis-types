@@ -71,12 +71,35 @@ type TransactionSummary = {
     networkTransactionId?: string;
 }
 
+enum CasapFinalDecisionType {
+    AcceptedTypeUnknown = 'ACCEPTED_TYPE_UNKNOWN',
+    AcceptedTypeAccountTakeover = 'ACCEPTED_TYPE_ACCOUNT_TAKEOVER',
+    AcceptedTypeChargebackWon = 'ACCEPTED_TYPE_CHARGEBACK_WON',
+    AcceptedTypeMerchantCredited = 'ACCEPTED_TYPE_MERCHANT_CREDITED',
+    AcceptedTypeWriteOff = 'ACCEPTED_TYPE_WRITE_OFF',
+    AcceptedTypeWsudAccepted = 'ACCEPTED_TYPE_WSUD_ACCEPTED',
+    AcceptedTypeOther = 'ACCEPTED_TYPE_OTHER',
+    CanceledTypeUnknown = 'CANCELED_TYPE_UNKNOWN',
+    CanceledTypeCustomerRequested = 'CANCELED_TYPE_CUSTOMER_REQUESTED',
+    CanceledTypeMerchantCredited = 'CANCELED_TYPE_MERCHANT_CREDITED',
+    CanceledTypeAgentError = 'CANCELED_TYPE_AGENT_ERROR',
+    CanceledTypeOther = 'CANCELED_TYPE_OTHER',
+    DeniedTypeUnknown = 'DENIED_TYPE_UNKNOWN',
+    DeniedTypeChargebackLost = 'DENIED_TYPE_CHARGEBACK_LOST',
+    DeniedTypeFriendlyFraud = 'DENIED_TYPE_FRIENDLY_FRAUD',
+    DeniedTypeInsufficientEvidence = 'DENIED_TYPE_INSUFFICIENT_EVIDENCE',
+    DeniedTypeWsudRejected = 'DENIED_TYPE_WSUD_REJECTED',
+    DeniedTypeOther = 'DENIED_TYPE_OTHER'
+}
+
 export type DebitCardDisputeTransaction = {
     id: string;
     debitCardDisputeId: string;
     transactionId: string;
     transaction: TransactionSummary;
     disputeAmountCents: number;
+    chargebackWonCents: number | null;
+    casapFinalDecisionType: CasapFinalDecisionType | null;
     status: DebitCardTransactionDisputeStatus;
     casapDisputeId: string | null;
     unitDisputeId: string | null;
